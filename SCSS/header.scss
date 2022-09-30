@@ -1,0 +1,83 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: none;
+
+    nav {
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+
+        a {
+            position: relative;
+            font-family: 'DM Serif Display', serif;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #222627;
+            transition: 0.2s ease-in-out;
+        }
+
+        .nav_link .ext_link a i:hover {
+            color: #BDA46D;
+            transition: 0.2s ease;
+        }
+        
+        .nav_link .scroll_link a:hover, .home_link h2 a:hover {
+            color: #BDA46D;
+            transition: 0.2s ease;
+        }
+
+        .nav_link .scroll_link a::after {
+            content: '';
+            position: absolute;
+            border-radius: 5px;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: -5px;
+            left: 0px;
+            background-color: #BDA46D;
+            transform-origin: bottom  left;
+            transition: 0.25s ease-out;
+        }
+
+        .nav_link .scroll_link a:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .nav_link, .home_link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+
+        .nav_link {
+            gap: 80px;
+        }
+        
+        .scroll_link, .ext_link {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .ext_link a i {
+            color: #222627;
+            transition: 0.2s ease;
+        }
+
+        .home_link .logo {
+            width: 40px;
+        }
+
+        .home_link h2 a{
+            font-style: italic;
+        }
+    }
+}
