@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     <!-- CSS link  -->
-    <link rel="stylesheet" href="SCSS/sty">
+    <link rel="stylesheet" href="SCSS/style.css">
 
     <!-- Font Awesome link  -->
     <script src="https://kit.fontawesome.com/c1b4de1409.js" crossorigin="anonymous"></script>
