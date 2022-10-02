@@ -260,6 +260,7 @@ header nav .home_link h2 a {
 .pres_section .pres_content .pres .text p {
   font-size: 25px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .pres_section .pres_content .pres .text p strong {
   color: #BDA46D;
