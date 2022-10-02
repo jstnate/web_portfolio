@@ -131,6 +131,11 @@ header nav .home_link h2 a {
   background-color: #BDA46D;
   width: 60px;
   height: 60px;
+  transition: 0.3s ease;
+}
+.go_up_button:hover {
+  background-color: #222627;
+  transition: 0.3s ease;
 }
 .go_up_button i {
   color: white;
@@ -138,9 +143,9 @@ header nav .home_link h2 a {
 }
 
 .welcome_section {
-  border: none;
+  position: relative;
   width: 100%;
-  min-height: 90vh;
+  height: 100vh;
 }
 .welcome_section::before {
   content: "";
@@ -163,7 +168,7 @@ header nav .home_link h2 a {
   gap: 25px;
   width: 75%;
   margin: 0 auto;
-  height: 90vh;
+  height: 100vh;
 }
 .welcome_section > div img {
   width: 30%;
@@ -182,6 +187,104 @@ header nav .home_link h2 a {
   font-size: 50px;
   color: #222627;
   margin-left: 100px;
+}
+
+.pres_section {
+  position: relative;
+  padding: 80px 0 0;
+  width: 100%;
+  height: 100vh;
+}
+.pres_section::before {
+  content: "";
+  background: url("../images/pathern_bg_reverse.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: inset 0 -25px 50px rgba(255, 255, 255, 0.5), inset 0 25px 50px rgba(255, 255, 255, 0.5);
+}
+.pres_section .pres_content {
+  width: 80%;
+  margin: 60px auto 30px;
+}
+.pres_section .pres_content .title {
+  font-family: "DM Serif Display", serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.pres_section .pres_content .title h1 {
+  font-size: 125px;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+.pres_section .pres_content .title h2 {
+  font-size: 75px;
+  text-transform: capitalize;
+  color: #BDA46D;
+  position: absolute;
+  right: 200px;
+  top: 75px;
+}
+.pres_section .pres_content .pres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.pres_section .pres_content .pres img {
+  width: 300px;
+  box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
+}
+.pres_section .pres_content .pres .text {
+  font-family: serif;
+  position: relative;
+  padding-bottom: 100px;
+}
+.pres_section .pres_content .pres .text h3 {
+  color: #BDA46D;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.pres_section .pres_content .pres .text p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.pres_section .pres_content .pres .text p strong {
+  color: #BDA46D;
+}
+.pres_section .pres_content .pres .text a {
+  background: #BDA46D;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 30px;
+  margin-top: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.pres_section .pres_content .pres .text a:hover {
+  background-color: #222627;
+  transition: 0.3s ease;
+}
+.pres_section .pres_content .pres .text a strong {
+  font-weight: bold;
+}
+.pres_section .pres_content .pres .text a i {
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
