@@ -1,9 +1,26 @@
+@use 'mixins';
+
+.go_up_button {
+    @include mixins.flexAlign(center, center);
+    @include mixins.fixPos(99);
+
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    background-color: #BDA46D;
+    width: 60px;
+    height: 60px;
+    
+    i {
+        color: white;
+        border-bottom: none;
+    }
+}
+
 .welcome_section {
-    position: relative;
-    z-index: -1;
     border: none;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
 
     &::before {
         content: "";
@@ -20,14 +37,13 @@
     }
 
     & > div {
+        @include mixins.flexAlign(center, center);
+
         position: relative;
-        display: flex;
         gap: 25px;
         width: 75%;
         margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        height: 90vh;
 
         img {
             width: 30%;

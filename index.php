@@ -7,7 +7,11 @@
     <?php require "header_template.php" ?>
 
     <main>
-        <section class="welcome_section">
+        <a href="#first_section" class="go_up_button">
+            <i class="fa-solid fa-angles-up fa-2x"></i>
+        </a>
+
+        <section id="first_section" class="welcome_section">
             <div>
                 <img src="images/pdp/logo_nate_grd.png" alt="">
 

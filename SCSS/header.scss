@@ -1,14 +1,18 @@
+@use 'mixins';
+
 header {
-    position: fixed;
+    @include mixins.flexAlign(center, space-between);
+    @include mixins.fixPos(99);
+
     top: 0;
     width: 100%;
     background: none;
 
     nav {
+        @include mixins.flexAlign(center, space-between);
+
+        width: 100%;
         background: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 10px 50px;
 
         a {

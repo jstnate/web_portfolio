@@ -1,0 +1,10 @@
+@mixin flexAlign($align, $justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin fixPos($index) {
+    position: fixed;
+    z-index: $index;
+}
