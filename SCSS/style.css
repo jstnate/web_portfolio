@@ -131,6 +131,7 @@ header nav .home_link h2 a {
   background-color: #BDA46D;
   width: 60px;
   height: 60px;
+  text-decoration: none;
   transition: 0.3s ease;
 }
 .go_up_button:hover {
@@ -245,6 +246,7 @@ header nav .home_link h2 a {
 }
 .pres_section .pres_content .pres img {
   width: 300px;
+  border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
 }
 .pres_section .pres_content .pres .text {
@@ -266,6 +268,7 @@ header nav .home_link h2 a {
   color: #BDA46D;
 }
 .pres_section .pres_content .pres .text a {
+  border-radius: 5px;
   background: #BDA46D;
   position: absolute;
   bottom: 0;
@@ -275,6 +278,7 @@ header nav .home_link h2 a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
   transition: 0.3s ease;
 }
 .pres_section .pres_content .pres .text a:hover {

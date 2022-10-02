@@ -10,6 +10,7 @@
     background-color: #BDA46D;
     width: 60px;
     height: 60px;
+    text-decoration: none;
     transition: 0.3s ease;
 
     &:hover {
@@ -89,6 +90,7 @@
     
             img {
                 width: 300px;
+                border-radius: 5px;
                 box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
             }
     
@@ -114,6 +116,7 @@
                 }
 
                 a {
+                    border-radius: 5px;
                     background: #BDA46D;
                     position: absolute;
                     bottom: 0;
@@ -123,6 +126,7 @@
                     color: white;
                     text-decoration: none;
                     font-size: 20px;
+                    box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
                     transition: 0.3s ease;
 
                     &:hover {
