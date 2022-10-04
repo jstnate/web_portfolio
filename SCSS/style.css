@@ -120,6 +120,10 @@ header nav .home_link h2 a {
   font-style: italic;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 .go_up_button {
   display: flex;
   align-items: center;
@@ -225,17 +229,19 @@ header nav .home_link h2 a {
   margin-bottom: 100px;
 }
 .pres_section .pres_content .title h1 {
-  font-size: 125px;
+  font-size: 100px;
   opacity: 0.3;
   text-transform: uppercase;
 }
 .pres_section .pres_content .title h2 {
-  font-size: 75px;
+  font-size: 50px;
   text-transform: capitalize;
   color: #BDA46D;
+}
+.pres_section .pres_content h2 {
   position: absolute;
-  right: 200px;
-  top: 75px;
+  right: 0;
+  bottom: 0;
 }
 .pres_section .pres_content .pres {
   display: flex;
@@ -329,22 +335,27 @@ header nav .home_link h2 a {
   margin-bottom: 100px;
 }
 .skills_section .skills_content .title h1 {
-  font-size: 125px;
+  font-size: 100px;
   opacity: 0.3;
   text-transform: uppercase;
 }
 .skills_section .skills_content .title h2 {
-  font-size: 75px;
+  font-size: 50px;
   text-transform: capitalize;
   color: #BDA46D;
+}
+.skills_section .skills_content h2 {
   position: absolute;
-  right: 200px;
-  top: 75px;
+  right: 0;
+  bottom: 0;
+}
+.skills_section .skills_content .title {
+  margin-bottom: 125px;
 }
 .skills_section .skills_content .skill {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 .skills_section .skills_content .skill .category {
   position: relative;
@@ -353,20 +364,33 @@ header nav .home_link h2 a {
   align-items: center;
   gap: 30px;
   width: 30%;
+  padding: 20px;
+  transition: all 0.4s;
+}
+.skills_section .skills_content .skill .category:hover {
+  background-color: rgba(189, 164, 109, 0.7);
+  box-shadow: 0 5px 10px rgba(134, 134, 134, 0.3);
+  border-radius: 5px;
+}
+.skills_section .skills_content .skill .category:hover h3 {
+  color: #ffffff;
 }
 .skills_section .skills_content .skill .category img {
   aspect-ratio: 1/1;
   object-fit: contain;
+  justify-self: center;
 }
 .skills_section .skills_content .skill .category h3 {
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 50%;
   font-family: "DM Serif Display", serif;
   color: #BDA46D;
   font-size: 50px;
   transform: translate(-50%, -50%) rotate(-90deg);
-  grid-area: "title";
+  grid-area: title;
+  word-break: keep-all;
+  justify-self: center;
 }
 .skills_section .skills_content .skill .front {
   grid-template-columns: 1fr 1fr;

@@ -59,18 +59,27 @@
             margin-bottom: 100px;
     
             h1 {
-                font-size: 125px;
+                font-size: 100px;
                 opacity: 0.3;
                 text-transform: uppercase;
             }
     
             h2 {
-                font-size: 75px;
+                font-size: 50px;
                 text-transform: capitalize;
                 color: #BDA46D;
-                position: absolute;
-                right: 200px;
-                top: 75px;
             }
         }
+}
+
+@mixin h2Position($left, $top) {
+    
+    h2 {
+        position: absolute;
+        right: $left;
+        bottom: $top;
+        // left: $left;
+        // top: $top;
+
+    }
 }
