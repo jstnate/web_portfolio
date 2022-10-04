@@ -7,7 +7,7 @@
     <?php require "header_template.php" ?>
 
     <main>
-        <a href="#first_section" class="go_up_button">
+        <a href="/#first_section" class="go_up_button">
             <i class="fa-solid fa-angles-up fa-2x"></i>
         </a>
 
@@ -22,7 +22,7 @@
             </div>
         </section>
 
-        <section class="pres_section">
+        <section class="pres_section" id="about">
             <div class="pres_content">
                 <div class="title">
                     <h1 class="big_title">
@@ -57,14 +57,14 @@
             </div>
         </section>
 
-        <section class="skills_section">
+        <section class="skills_section" id="skills">
             <div class="skills_content">
                 <div class="title">
                     <h1>my skills</h1>
                     <h2>What i can do ?</h2>
                 </div>
 
-                <div class="skill"s>
+                <div class="skill">
                     <div class="front category">
                         <h3>Front-end</h3>
                         <img src="images/logos/logo_html.png" alt="" class="icon-grid1-1">

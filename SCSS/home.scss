@@ -161,7 +161,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 2px solid red;
 
             .category {
                 position: relative;
@@ -169,8 +168,12 @@
                 justify-content: center;
                 align-items: center;
                 gap: 30px;
-                border: 2px solid yellow;
                 width: 30%;
+
+                img {
+                    aspect-ratio: 1 / 1;
+                    object-fit: contain;
+                }
 
                 h3 {
                     position: absolute;
@@ -198,16 +201,8 @@
                     }
                 }
 
-                .icon-grid1-1 {
-                    width: 60%;
-                }
-
-                .icon-grid1-2 {
-                    width: 43%;
-                }
-
-                .icon-grid1-3 {
-                    width: 110%;
+                img {
+                    width: 50%;
                 }
             }
 
@@ -224,12 +219,8 @@
                     }
                 }
 
-                .icon-grid2-1 {
-                    width: 80%;
-                }
-
-                .icon-grid2-2 {
-                    width: 80%;
+                img {
+                    width: 60%;
                 }
             }
 
@@ -248,20 +239,8 @@
                     }
                 }
 
-                .icon-grid3-1 {
-                    width: 50%;
-                }
-
-                .icon-grid3-2 {
-                    width: 90%;
-                }
-
-                .icon-grid3-3 {
-                    width: 50%;
-                }
-
-                .icon-grid3-4 {
-                    width: 60%;
+                img {
+                    width: 40%;
                 }
             }
         }
