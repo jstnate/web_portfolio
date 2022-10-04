@@ -73,11 +73,11 @@ header nav a {
 }
 header nav .nav_link .ext_link a i:hover {
   color: #BDA46D;
-  transition: 0.2s ease;
+  transition: all 0.4s;
 }
 header nav .nav_link .scroll_link a:hover, header nav .home_link h2 a:hover {
   color: #BDA46D;
-  transition: 0.2s ease;
+  transition: all 0.4s;
 }
 header nav .nav_link .scroll_link a::after {
   content: "";
@@ -90,7 +90,7 @@ header nav .nav_link .scroll_link a::after {
   left: 0px;
   background-color: #BDA46D;
   transform-origin: bottom left;
-  transition: 0.25s ease-out;
+  transition: all 0.4s;
 }
 header nav .nav_link .scroll_link a:hover:after {
   transform: scaleX(1);
@@ -111,7 +111,7 @@ header nav .scroll_link, header nav .ext_link {
 }
 header nav .ext_link a i {
   color: #222627;
-  transition: 0.2s ease;
+  transition: all 0.4s;
 }
 header nav .home_link .logo {
   width: 40px;
@@ -137,11 +137,11 @@ html, body {
   width: 60px;
   height: 60px;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.4s;
 }
 .go_up_button:hover {
   background-color: #222627;
-  transition: 0.3s ease;
+  transition: all 0.4s;
 }
 .go_up_button i {
   color: white;
@@ -301,11 +301,11 @@ html, body {
   text-decoration: none;
   font-size: 20px;
   box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
-  transition: 0.3s ease;
+  transition: all 0.4s;
 }
 .pres_section .pres_content .pres .text a:hover {
   background-color: #222627;
-  transition: 0.3s ease;
+  transition: all 0.4s;
 }
 .pres_section .pres_content .pres .text a strong {
   font-weight: bold;

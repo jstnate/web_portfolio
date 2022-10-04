@@ -27,12 +27,12 @@ header {
 
         .nav_link .ext_link a i:hover {
             color: #BDA46D;
-            transition: 0.2s ease;
+            transition: all 0.4s;
         }
         
         .nav_link .scroll_link a:hover, .home_link h2 a:hover {
             color: #BDA46D;
-            transition: 0.2s ease;
+            transition: all 0.4s;
         }
 
         .nav_link .scroll_link a::after {
@@ -46,7 +46,7 @@ header {
             left: 0px;
             background-color: #BDA46D;
             transform-origin: bottom  left;
-            transition: 0.25s ease-out;
+            transition: all 0.4s;
         }
 
         .nav_link .scroll_link a:hover:after {
@@ -73,7 +73,7 @@ header {
         
         .ext_link a i {
             color: #222627;
-            transition: 0.2s ease;
+            transition: all 0.4s;
         }
 
         .home_link .logo {
