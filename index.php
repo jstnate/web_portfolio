@@ -17,6 +17,7 @@
 
                 <div class="welcome_text">
                     <h1 class="name_title">Nathan LEFETEY</h1>
+                    <hr>
                     <h2 class="job_title">Front-end Developper</h2>
                 </div>
             </div>
