@@ -18,6 +18,7 @@ time, mark, audio, video {
   font-family: "DM Serif Display", serif;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -192,7 +193,7 @@ header nav .home_link h2 a {
 
 .pres_section {
   position: relative;
-  padding: 80px 0 0;
+  padding: 10px 0 0;
   width: 100%;
   height: 100vh;
 }
@@ -296,7 +297,7 @@ header nav .home_link h2 a {
 
 .skills_section {
   position: relative;
-  padding: 80px 0 0;
+  padding: 10px 0 0;
   width: 100%;
   height: 100vh;
 }
@@ -344,7 +345,6 @@ header nav .home_link h2 a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 .skills_section .skills_content .skill .category {
   position: relative;
@@ -352,8 +352,11 @@ header nav .home_link h2 a {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  border: 2px solid yellow;
   width: 30%;
+}
+.skills_section .skills_content .skill .category img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 .skills_section .skills_content .skill .category h3 {
   position: absolute;
@@ -380,14 +383,8 @@ header nav .home_link h2 a {
 .skills_section .skills_content .skill .front .icon-grid1-3 {
   grid-area: icon3;
 }
-.skills_section .skills_content .skill .front .icon-grid1-1 {
-  width: 60%;
-}
-.skills_section .skills_content .skill .front .icon-grid1-2 {
-  width: 43%;
-}
-.skills_section .skills_content .skill .front .icon-grid1-3 {
-  width: 110%;
+.skills_section .skills_content .skill .front img {
+  width: 50%;
 }
 .skills_section .skills_content .skill .back {
   grid-template-columns: 1fr 1fr;
@@ -401,11 +398,8 @@ header nav .home_link h2 a {
 .skills_section .skills_content .skill .back .icon-grid2-2 {
   grid-area: icon2;
 }
-.skills_section .skills_content .skill .back .icon-grid2-1 {
-  width: 80%;
-}
-.skills_section .skills_content .skill .back .icon-grid2-2 {
-  width: 80%;
+.skills_section .skills_content .skill .back img {
+  width: 60%;
 }
 .skills_section .skills_content .skill .design {
   grid-template-columns: 1fr 1fr;
@@ -425,17 +419,8 @@ header nav .home_link h2 a {
 .skills_section .skills_content .skill .design .icon-grid3-4 {
   grid-area: icon4;
 }
-.skills_section .skills_content .skill .design .icon-grid3-1 {
-  width: 50%;
-}
-.skills_section .skills_content .skill .design .icon-grid3-2 {
-  width: 90%;
-}
-.skills_section .skills_content .skill .design .icon-grid3-3 {
-  width: 50%;
-}
-.skills_section .skills_content .skill .design .icon-grid3-4 {
-  width: 60%;
+.skills_section .skills_content .skill .design img {
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
