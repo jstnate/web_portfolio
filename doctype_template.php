@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="SCSS/style.css">
 
     <!-- Font Awesome link  -->
-    <script src="https://kit.fontawesome.com/09c7b1ac76.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/b050931f68.js" crossorigin="anonymous"></script>
+        
     <!-- Page logo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/pdp/icon_nate.png" border-radius="50%">
 
