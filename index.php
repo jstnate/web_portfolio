@@ -56,6 +56,38 @@
                 </div>
             </div>
         </section>
+
+        <section class="skills_section">
+            <div class="skills_content">
+                <div class="title">
+                    <h1>my skills</h1>
+                    <h2>What i can do ?</h2>
+                </div>
+
+                <div class="skill"s>
+                    <div class="front category">
+                        <h3>Front-end</h3>
+                        <img src="images/logos/logo_html.png" alt="" class="icon-grid1-1">
+                        <img src="images/logos/logo_css.png" alt="" class="icon-grid1-2">
+                        <img src="images/logos/logo_js.png" alt="" class="icon-grid1-3">
+                    </div>
+
+                    <div class="back category">
+                        <h3>Back-end</h3>
+                        <img src="images/logos/logo_php.png" alt="" class="icon-grid2-1">
+                        <img src="images/logos/logo_mysql.png" alt="" class="icon-grid2-2">
+                    </div>
+
+                    <div class="design category">
+                        <h3>Design-end</h3>
+                        <img src="images/logos/logo_photoshop.png" alt="" class="icon-grid3-1">
+                        <img src="images/logos/logo_illustrator.png" alt="" class="icon-grid3-2">
+                        <img src="images/logos/logo_xd.png" alt=""  class="icon-grid3-3">
+                        <img src="images/logos/logo_figma.png" alt="" class="icon-grid3-4">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
 </body>
