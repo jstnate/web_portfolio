@@ -10,8 +10,8 @@
 
         <div class="nav_link">
             <div class="scroll_link">
-                <a href="#">About</a>
-                <a href="#">Skills</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
                 <a href="#">Projects</a>
             </div>
             
