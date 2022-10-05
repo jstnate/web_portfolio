@@ -2,6 +2,11 @@
 
 html, body {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body section {
+    scroll-snap-align: start;
 }
 
 .go_up_button {
