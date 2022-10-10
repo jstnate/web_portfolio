@@ -90,6 +90,39 @@ body section {
     }
 }
 
+@media screen and (max-width:1200px) {
+    .welcome_section > div {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .welcome_section {
+        div {
+            img {
+                display: none;
+            }
+
+            .welcome_text .job_title {
+                position: relative;
+                right: auto;
+                left: auto;
+                text-align: center
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .welcome_section {
+        .welcome_text {
+            .name_title {
+                width: max-content;
+            }
+        }
+    }
+}
+
 .pres_section {
     @include mixins.sectionWidth;
     
@@ -169,6 +202,80 @@ body section {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .title {
+        h2 {
+            top: 80px !important;
+        }
+    }
+
+    .pres {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html, body {
+        scroll-snap-type: none;
+    }
+
+    body section {
+        scroll-snap-align: none;
+    }
+
+    .pres_section {
+        background-color: #BDA46D;
+        height: fit-content;
+        padding: 10px 0 20px;
+
+        &::before {
+            display: none;
+        }
+        .pres_content {
+            height: fit-content;
+
+            .title {
+                h1 {
+                    color: #222627;
+                    opacity: 1;
+                }
+
+                h2 {
+                    color: #ffffff;
+                }
+            }
+            .pres {
+                flex-direction: column;
+                gap: 2em;
+
+                img {
+                    width: 60%;
+                    height: 75vh;
+                    object-fit: cover;
+                }
+
+                .text {
+                    h1 {
+                        color: #ffffff;
+                    }
+
+                    p strong {
+                        color: #ffffff;
+                    }
+
+                    a {
+                        right: 50%;
+                        transform: translateX(50%);
+                        background-color: #ffffff;
+                        color: #BDA46D;
+                        padding: 1em 2em
+                    }
+                }
+            }
+        }
+    }
+}
+
 .skills_section {
     @include mixins.sectionWidth;
 
@@ -182,7 +289,6 @@ body section {
 
         .title {
             margin-bottom: 125px;
-
         }
 
         .skill {

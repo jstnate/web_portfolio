@@ -44,6 +44,20 @@
     box-shadow: inset 0 -25px 100px rgba(255, 255, 255, 0.8), inset 0 25px 100px rgba(255, 255, 255, 0.8);
 }
 
+@mixin respoReverse {
+    content: "";
+    background: url("../images/pathern_bg_reverse.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 500px;
+    box-shadow: inset 0 -25px 100px rgba(255, 255, 255, 0.8), inset 0 25px 100px rgba(255, 255, 255, 0.8);
+}
+
 @mixin sectionTitle {
     position: relative;
     z-index: 2;
@@ -72,14 +86,11 @@
         }
 }
 
-@mixin h2Position($left, $top) {
+@mixin h2Position($right, $bottom) {
     
     h2 {
         position: absolute;
-        right: $left;
-        bottom: $top;
-        // left: $left;
-        // top: $top;
-
+        right: $right;
+        bottom: $bottom;
     }
 }

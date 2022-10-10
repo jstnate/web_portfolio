@@ -16,7 +16,7 @@
                 <img src="images/pdp/logo_nate_grd.png" alt="">
 
                 <div class="welcome_text">
-                    <h1 class="name_title">Nathan LEFETEY</h1>
+                    <h1 class="name_title">Nathan <span>LEFETEY</span></h1>
                     <hr>
                     <h2 class="job_title">Full-stack Developper</h2>
                 </div>
