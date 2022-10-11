@@ -1,6 +1,6 @@
 'use strict';
 
-let btn = document.querySelector('.burger-btn')
+let btn = document.querySelector('.burger_btn')
 let menu = document.querySelector('.nav_link')
 
 if (btn != null) {

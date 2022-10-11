@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="burger-btn">
+        <div class="burger_btn">
             <span class="top-bar"></span>
             <span class="mid-bar"></span>
             <span class="bottom-bar"></span>

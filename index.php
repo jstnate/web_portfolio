@@ -89,8 +89,10 @@
                 </div>
             </div>
         </section>
+
+        <section class="project_section"></section>
     </main>
-    
+
     <?php require_once 'footer.php'; ?>
 </body>
 </html>
