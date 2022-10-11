@@ -119,6 +119,9 @@ header nav .home_link .logo {
 header nav .home_link h2 a {
   font-style: italic;
 }
+header nav .burger-btn {
+  display: none;
+}
 
 @media screen and (max-width: 660px) {
   header nav {
@@ -165,7 +168,6 @@ header nav .home_link h2 a {
     transition: all 0.4s;
   }
   header nav .burger-btn:hover span {
-    background-color: #BDA46D;
     width: 100%;
   }
   header nav .burger-btn:hover .top-bar {
@@ -213,11 +215,6 @@ header nav .home_link h2 a {
 }
 html, body {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-
-body section {
-  scroll-snap-align: start;
 }
 
 .go_up_button {
@@ -329,7 +326,7 @@ body section {
   position: relative;
   padding: 10px 0 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .pres_section::before {
   content: "";
@@ -502,7 +499,7 @@ body section {
   position: relative;
   padding: 10px 0 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .skills_section::before {
   content: "";
@@ -682,6 +679,7 @@ body section {
   }
 }
 footer {
+  z-index: 99;
   width: 100%;
   height: 8vh;
   background-color: #BDA46D;

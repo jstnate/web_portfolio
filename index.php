@@ -91,5 +91,7 @@
         </section>
     </main>
     
+    <?php require_once 'footer.php'; ?>
 </body>
-<?php require 'footer.php'; ?>
+</html>
+

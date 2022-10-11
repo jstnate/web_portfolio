@@ -83,6 +83,10 @@ header {
         .home_link h2 a{
             font-style: italic;
         }
+
+        .burger-btn {
+            display: none;
+        }
     }
 }
 
@@ -138,7 +142,6 @@ header {
                 &:hover {
                 
                     span {
-                        background-color: #BDA46D;
                         width: 100%;
                     }
 
