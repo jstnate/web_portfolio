@@ -8,7 +8,7 @@
             </h2>
         </div>
 
-        <div class="nav_link active">
+        <div class="nav_link">
             <div class="scroll_link">
                 <a href="#about" title="Go on the presentation section">About</a>
                 <a href="#skills" title="Go on the skills section">Skills</a>
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="burger-btn active">
+        <div class="burger-btn">
             <span class="top-bar"></span>
             <span class="mid-bar"></span>
             <span class="bottom-bar"></span>
