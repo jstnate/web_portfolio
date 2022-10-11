@@ -85,3 +85,120 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 660px) {
+    header {
+        nav {
+            padding: .3em 2em;
+            align-items: center;
+            .nav_link {
+                position: absolute;
+                left: 0;
+                top: -20vh;
+                height: 60px;
+                width: 100%;
+                flex-direction: row-reverse;
+                padding: .3em 3em;
+                justify-content: flex-end;
+                background-color: #BDA46D;
+                transition: all .4s;
+
+                .scroll_link  a:hover, .ext_link a:hover i {
+                    color: #ffffff;
+                }
+
+                .scroll_link a:hover::after {
+                    background-color: #ffffff;
+                }
+            }
+
+            .nav_link.active {
+                top: 0;
+            }
+
+            .burger-btn {
+                width: 50px;
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                cursor: pointer;
+                transition: all .4s;
+
+                span {
+                    height: 5px;
+                    background-color: #222627;
+                    width: 100%;
+                    border: none;
+                    transition: all .4s;
+                }
+
+                &:hover {
+                
+                    span {
+                        background-color: #BDA46D;
+                        width: 100%;
+                    }
+
+                    .top-bar {
+                        margin-right: -50%;
+                    }
+
+                    .bottom-bar {
+                        margin-left: -50%;
+                    }
+                }
+
+                .top-bar {
+                    width: 50%;
+                    margin-right: 50%;
+                }
+
+                .bottom-bar {
+                    width: 50%;
+                    margin-left: 50%;
+                }
+            }
+
+            .burger-btn.active {
+                align-items: center;
+                position: relative;
+                z-index: 2;
+
+                span {
+                    width: 100%;
+                }
+    
+                .top-bar{
+                    transform: translateY(20px) translateX(15px) rotate(-45deg);
+                }
+    
+                .mid-bar {
+                    display: none;
+                }
+    
+                .bottom-bar {
+                    transform: translateY(-15px) translateX(-10px) rotate(45deg);
+                    width: 100%;
+                }
+
+                &:hover {
+                    span {
+                        background-color: #ffffff;
+                    }
+
+                    .top-bar {
+                        transform: translateY(20px) translateX(-10px) rotate(-45deg);
+
+                    }
+                    .bottom-bar {
+                        width: 50%;
+                        transform: translateY(-15px) translateX(15px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}

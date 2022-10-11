@@ -120,6 +120,97 @@ header nav .home_link h2 a {
   font-style: italic;
 }
 
+@media screen and (max-width: 660px) {
+  header nav {
+    padding: 0.3em 2em;
+    align-items: center;
+  }
+  header nav .nav_link {
+    position: absolute;
+    left: 0;
+    top: -20vh;
+    height: 60px;
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 0.3em 3em;
+    justify-content: flex-end;
+    background-color: #BDA46D;
+    transition: all 0.4s;
+  }
+  header nav .nav_link .scroll_link a:hover, header nav .nav_link .ext_link a:hover i {
+    color: #ffffff;
+  }
+  header nav .nav_link .scroll_link a:hover::after {
+    background-color: #ffffff;
+  }
+  header nav .nav_link.active {
+    top: 0;
+  }
+  header nav .burger-btn {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  header nav .burger-btn span {
+    height: 5px;
+    background-color: #222627;
+    width: 100%;
+    border: none;
+    transition: all 0.4s;
+  }
+  header nav .burger-btn:hover span {
+    background-color: #BDA46D;
+    width: 100%;
+  }
+  header nav .burger-btn:hover .top-bar {
+    margin-right: -50%;
+  }
+  header nav .burger-btn:hover .bottom-bar {
+    margin-left: -50%;
+  }
+  header nav .burger-btn .top-bar {
+    width: 50%;
+    margin-right: 50%;
+  }
+  header nav .burger-btn .bottom-bar {
+    width: 50%;
+    margin-left: 50%;
+  }
+  header nav .burger-btn.active {
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  header nav .burger-btn.active span {
+    width: 100%;
+  }
+  header nav .burger-btn.active .top-bar {
+    transform: translateY(20px) translateX(15px) rotate(-45deg);
+  }
+  header nav .burger-btn.active .mid-bar {
+    display: none;
+  }
+  header nav .burger-btn.active .bottom-bar {
+    transform: translateY(-15px) translateX(-10px) rotate(45deg);
+    width: 100%;
+  }
+  header nav .burger-btn.active:hover span {
+    background-color: #ffffff;
+  }
+  header nav .burger-btn.active:hover .top-bar {
+    transform: translateY(20px) translateX(-10px) rotate(-45deg);
+  }
+  header nav .burger-btn.active:hover .bottom-bar {
+    width: 50%;
+    transform: translateY(-15px) translateX(15px) rotate(45deg);
+  }
+}
 html, body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
