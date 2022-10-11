@@ -177,7 +177,7 @@ body section {
                     right: 0;
                     padding: 15px 30px;
                     margin-top: 50px;
-                    color: white;
+                    color: #ffffff;
                     text-decoration: none;
                     font-size: 20px;
                     box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.5);
@@ -272,6 +272,19 @@ body section {
                     }
                 }
             }
+        }
+    }
+}
+
+@media  screen and (max-width: 660px) {
+    .pres_section .pres_content .pres .text a {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        strong {
+            margin-top: 5px
         }
     }
 }
@@ -390,6 +403,55 @@ body section {
 
                 img {
                     width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .skills_section .skills_content {
+        .skill {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+            .category {
+                width: 100%;
+                height: 30vh;
+
+                h3 {
+                    transform: rotate(0deg);
+                    position: static;
+                }
+            }
+
+            .front {
+                grid-template-columns: 1fr 1fr 1fr !important;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "title title title"
+                                    "icon1 icon2 icon3";
+            }
+
+            .back {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "title title"
+                                    "icon1 icon2";
+                img {
+                    width: 40%;
+                }
+            }
+
+            .design {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "title title title title"
+                                    "icon1 icon2 icon3 icon4";
+
+                img {
+                    width: 60%;
                 }
             }
         }
