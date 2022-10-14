@@ -4,7 +4,7 @@
             <a href="index.php"><img src="images/pdp/logo_nate_blc.png" alt="" class="logo"></a>
 
             <h2>
-                <a href="#" class="type_write">@jstnate</a>
+                <span class="txt-rotate wrap" data-period="1000" data-rotate='[ "@jstnate", "Web Portfolio", "Home Page", "Nathan LEFETEY"]'></span>
             </h2>
         </div>
 

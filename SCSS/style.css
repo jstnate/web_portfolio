@@ -116,8 +116,13 @@ header nav .ext_link a i {
 header nav .home_link .logo {
   width: 40px;
 }
-header nav .home_link h2 a {
+header nav .home_link h2 {
   font-style: italic;
+  font-family: "DM Serif Display", serif;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222627;
 }
 header nav .burger_btn {
   display: none;
@@ -317,9 +322,27 @@ html, body {
     text-align: center;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   .welcome_section .welcome_text .name_title {
     width: max-content;
+  }
+}
+@media screen and (max-width: 580px) {
+  .welcome_section div {
+    flex-direction: column;
+  }
+  .welcome_section div img {
+    display: block;
+    width: 60%;
+  }
+  .welcome_section div .welcome_text h1 {
+    display: none;
+  }
+  .welcome_section div .welcome_text hr {
+    margin: 1em 0 2em;
+  }
+  .welcome_section div .welcome_text h2 {
+    width: 100%;
   }
 }
 .pres_section {
@@ -444,43 +467,37 @@ html, body {
     scroll-snap-align: none;
   }
   .pres_section {
-    background-color: #BDA46D;
     height: fit-content;
     padding: 10px 0 20px;
   }
   .pres_section::before {
-    display: none;
+    content: "";
+    background: url("../images/pathern_bg.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset 0 -25px 100px rgba(255, 255, 255, 0.8), inset 0 25px 100px rgba(255, 255, 255, 0.8);
   }
   .pres_section .pres_content {
     height: fit-content;
   }
-  .pres_section .pres_content .title h1 {
-    color: #222627;
-    opacity: 1;
-  }
-  .pres_section .pres_content .title h2 {
-    color: #ffffff;
-  }
   .pres_section .pres_content .pres {
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
   }
   .pres_section .pres_content .pres img {
     width: 60%;
     height: 75vh;
     object-fit: cover;
   }
-  .pres_section .pres_content .pres .text h1 {
-    color: #ffffff;
-  }
-  .pres_section .pres_content .pres .text p strong {
-    color: #ffffff;
-  }
   .pres_section .pres_content .pres .text a {
     right: 50%;
     transform: translateX(50%);
-    background-color: #ffffff;
-    color: #BDA46D;
     padding: 1em 2em;
   }
 }
@@ -493,6 +510,17 @@ html, body {
   }
   .pres_section .pres_content .pres .text a strong {
     margin-top: 5px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .pres_section .pres_content {
+    width: 90%;
+  }
+  .pres_section .pres_content .title {
+    width: 100% !important;
+  }
+  .pres_section .pres_content .pres img {
+    width: 80%;
   }
 }
 .skills_section {
@@ -641,20 +669,26 @@ html, body {
   width: 40%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   .skills_section .skills_content .skill {
     width: 90%;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto 5em;
     gap: 2em;
   }
   .skills_section .skills_content .skill .category {
     width: 100%;
     height: 30vh;
+    background-color: #BDA46D;
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .skills_section .skills_content .skill .category h3 {
     transform: rotate(0deg);
     position: static;
+    color: #ffffff;
   }
   .skills_section .skills_content .skill .front {
     grid-template-columns: 1fr 1fr 1fr !important;
@@ -676,6 +710,11 @@ html, body {
   }
   .skills_section .skills_content .skill .design img {
     width: 60%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .skills_section .skills_content {
+    width: 90%;
   }
 }
 footer {

@@ -5,3 +5,4 @@
 </footer>
 
 <script src="JS/burger-menu-script.js"></script>
+<script src="JS/text-header-anim.js"></script>

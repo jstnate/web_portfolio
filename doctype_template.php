@@ -12,6 +12,7 @@
 
     <!-- CSS link  -->
     <link rel="stylesheet" href="SCSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 
     <!-- Font Awesome link  -->
     <script src="https://kit.fontawesome.com/b050931f68.js" crossorigin="anonymous"></script>

@@ -80,8 +80,13 @@ header {
             width: 40px;
         }
 
-        .home_link h2 a{
+        .home_link h2 {
             font-style: italic;
+            font-family: 'DM Serif Display', serif;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #222627;
         }
 
         .burger_btn {
