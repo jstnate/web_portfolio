@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch SCSS/output.scss:SCSS/style.css"
+    "sass": "sass --watch scss/output.scss:scss/style.css"
   },
   "repository": {
     "type": "git",

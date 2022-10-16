@@ -28,6 +28,10 @@ html, body {
     }
 }
 
+.title {
+    @include mixins.sectionTitle;
+}
+
 .welcome_section {
     position: relative;
     width: 100%;
@@ -91,6 +95,12 @@ html, body {
     }
 }
 
+@media screen and (max-width: 1130px) {
+    .welcome_section > div {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .welcome_section {
         div {
@@ -151,7 +161,10 @@ html, body {
     }
 
     .pres_content {
-        @include mixins.sectionTitle;
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        margin: 60px auto 30px;
         @include mixins.h2Position(0, 0);
         
         .pres {
@@ -307,6 +320,7 @@ html, body {
     } 
     
 }
+
 .skills_section {
     @include mixins.sectionWidth;
 
@@ -315,7 +329,10 @@ html, body {
     }
 
     .skills_content {
-        @include mixins.sectionTitle;
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        margin: 60px auto 30px;
         @include mixins.h2Position(0, 0);
 
         .title {
@@ -487,5 +504,22 @@ html, body {
         .skills_content {
             width: 90%;
         }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .go_up_button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .pres_section .pres_content .pres img {
+        height: 60vh;
+        width: 90%;
+    }
+
+    .title {
+        @include mixins.responsiveSectionTitle;
     }
 }

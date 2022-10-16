@@ -26,10 +26,10 @@
         <section class="pres_section" id="about">
             <div class="pres_content">
                 <div class="title">
-                    <h1 class="big_title">
+                    <h1>
                         about me
                     </h1>
-                    <h2 class="lil_tilte">
+                    <h2>
                         who am i ?
                     </h2>
                 </div>
