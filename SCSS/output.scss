@@ -1,4 +1,4 @@
-@use 'reset';
-@use 'header';
-@use 'home';
-@use 'footer';
+@use 'bases/reset';
+@use 'layouts/header';
+@use 'pages/home';
+@use 'layouts/footer';

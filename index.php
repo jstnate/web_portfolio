@@ -1,10 +1,10 @@
 <?php 
     $pageTitle = "Nathan LEFETEY - Portfolio";
-    require "doctype_template.php"
+    require_once "templates/doctype.php"
 ?>
 
 <body>
-    <?php require "header_template.php" ?>
+    <?php require_once "templates/header.php" ?>
 
     <main>
         <a href="#first_section" class="go_up_button" title="Go on the top">
@@ -90,10 +90,55 @@
             </div>
         </section>
 
-        <section class="project_section"></section>
+        <section id="projects" class="project_section">
+            <div class="project_content">
+                <div class="title">
+                    <h1>my project</h1>
+                    <h2>What i've done ?</h2>
+                </div>
+
+                <div class="projects_card">
+                    <div class="web_project_card">
+                        <div class="card active">
+                            <img src="images/project-cover/onmix-cover.jpg" alt="" class="card_cover">
+                            <div class="card_banner">
+                                <div class="card_left_part">
+                                    <img src="images/project-logo/onmix_site_icon.png" alt="">
+                                    <div class="card_banner_text">
+                                        <h3>Onmix</h3>
+                                        <h4>y1 project / web site</h4>
+                                    </div>
+                                </div>
+
+                                <a href="www.onmix.tk" class="card_right_part">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/project-cover/onmix-cover.jpg" alt="">
+                            <div class="card_banner">
+                                <div class="card_left_part">
+                                    <img src="images/project-logo/onmix_site_icon.png" alt="">
+                                    <div class="card_banner_text">
+                                        <h3>Onmix</h3>
+                                        <h4>y1 project / web site</h4>
+                                    </div>
+                                </div>
+
+                                <a href="www.onmix.tk" class="card_right_part">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <?php require_once 'footer.php'; ?>
+    <?php require_once 'templates/footer.php'; ?>
 </body>
 </html>
 

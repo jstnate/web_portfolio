@@ -296,7 +296,7 @@ html, body {
 }
 .welcome_section::before {
   content: "";
-  background: url("../images/pathern_bg.jpg") no-repeat;
+  background: url("../images/pattern/pathern_bg.jpg") no-repeat;
   background-size: cover;
   opacity: 0.5;
   position: absolute;
@@ -395,13 +395,13 @@ html, body {
 }
 .pres_section {
   position: relative;
-  padding: 10px 0 0;
+  padding: 10px 0 10px;
   width: 100%;
   min-height: 100vh;
 }
 .pres_section::before {
   content: "";
-  background: url("../images/pathern_bg_reverse.jpg") no-repeat;
+  background: url("../images/pattern/pathern_bg_reverse.jpg") no-repeat;
   background-size: cover;
   opacity: 0.5;
   position: absolute;
@@ -502,7 +502,7 @@ html, body {
   }
   .pres_section::before {
     content: "";
-    background: url("../images/pathern_bg.jpg") no-repeat;
+    background: url("../images/pattern/pathern_bg.jpg") no-repeat;
     background-size: cover;
     opacity: 0.5;
     position: absolute;
@@ -555,13 +555,13 @@ html, body {
 }
 .skills_section {
   position: relative;
-  padding: 10px 0 0;
+  padding: 10px 0 10px;
   width: 100%;
   min-height: 100vh;
 }
 .skills_section::before {
   content: "";
-  background: url("../images/pathern_bg.jpg") no-repeat;
+  background: url("../images/pattern/pathern_bg.jpg") no-repeat;
   background-size: cover;
   opacity: 0.5;
   position: absolute;
@@ -758,6 +758,139 @@ html, body {
     color: #BDA46D;
   }
 }
+.project_section {
+  position: relative;
+  padding: 10px 0 10px;
+  width: 100%;
+  min-height: 100vh;
+}
+.project_section::before {
+  content: "";
+  background: url("../images/pattern/pathern_bg.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: inset 0 -25px 100px rgba(255, 255, 255, 0.8), inset 0 25px 100px rgba(255, 255, 255, 0.8);
+}
+.project_section .project_content {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  margin: 60px auto;
+}
+.project_section .project_content h2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.project_section .project_content .title {
+  margin-bottom: 125px;
+}
+.project_section .project_content .projects_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project_section .project_content .projects_card .web_project_card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.project_section .project_content .projects_card .web_project_card .card.active {
+  width: 600px;
+  height: fit-content;
+}
+.project_section .project_content .projects_card .web_project_card .card.active img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner {
+  height: 70px;
+  border: none;
+  background-color: #ffffff;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner .card_left_part {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "DM Serif Display", serif;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner .card_left_part img {
+  width: 70px;
+  height: 70px;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner .card_left_part h3 {
+  display: block;
+  font-size: 24px;
+  color: #BDA46D;
+  margin-bottom: 5px;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner .card_left_part h4 {
+  display: block;
+  text-transform: uppercase;
+  color: #222627;
+  opacity: 0.3;
+  font-size: 16px;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner .card_right_part {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project_section .project_content .projects_card .web_project_card .card.active .card_banner .card_right_part i {
+  font-size: 30px;
+  color: #BDA46D;
+}
+.project_section .project_content .projects_card .web_project_card .card {
+  border-radius: 20px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+.project_section .project_content .projects_card .web_project_card .card img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+.project_section .project_content .projects_card .web_project_card .card .card_banner {
+  height: 70px;
+  border: none;
+  background-color: #ffffff;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project_section .project_content .projects_card .web_project_card .card .card_banner .card_left_part img {
+  width: 35px;
+  height: 35px;
+}
+.project_section .project_content .projects_card .web_project_card .card .card_banner .card_left_part h3, .project_section .project_content .projects_card .web_project_card .card .card_banner .card_left_part h4 {
+  display: none;
+}
+.project_section .project_content .projects_card .web_project_card .card .card_banner .card_right_part {
+  display: none;
+}
+
 footer {
   z-index: 99;
   width: 100%;
