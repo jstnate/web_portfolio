@@ -100,20 +100,39 @@
                 <div class="projects_card">
                     <div class="web_project projects_type">
                         <h2>Web Project</h2>
-                        <div class="card active">
-                            <img src="images/project-cover/onmix-cover.jpg" alt="" class="card_cover">
-                            <div class="card_banner">
-                                <div class="card_left_part">
-                                    <img src="images/project-logo/onmix_site_icon.png" alt="">
-                                    <div class="card_banner_text">
-                                        <h3>Onmix</h3>
-                                        <h4>y1 project / web site</h4>
+                        <div class="cards">
+                            <div class="card active">
+                                <img src="images/project-cover/onmix-cover.jpg" alt="" class="card_cover">
+                                <div class="card_banner">
+                                    <div class="card_left_part">
+                                        <img src="images/project-logo/onmix_site_icon.png" alt="">
+                                        <div class="card_banner_text">
+                                            <h3>Onmix</h3>
+                                            <h4>y1 project / web site</h4>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <a href="www.onmix.tk" class="card_right_part">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
+                                    <a href="www.onmix.tk" class="card_right_part">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="images/project-cover/onmix-cover.jpg" alt="" class="card_cover">
+                                <div class="card_banner">
+                                    <div class="card_left_part">
+                                        <img src="images/project-logo/onmix_site_icon.png" alt="">
+                                        <div class="card_banner_text">
+                                            <h3>Onmix</h3>
+                                            <h4>y1 project / web site</h4>
+                                        </div>
+                                    </div>
+
+                                    <a href="www.onmix.tk" class="card_right_part">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         

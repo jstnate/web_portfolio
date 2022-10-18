@@ -1,6 +1,6 @@
 <footer>
     <span>
-        Made by <a href="https://github.com/jstnate">Nathan LEFETEY</a> &copy 2022 Copyright All Rights
+        Made by <a href="https://www.linkedin.com/in/nathanlefetey/">Nathan LEFETEY</a> &copy 2022 Copyright All Rights
     </span>
 </footer>
 
