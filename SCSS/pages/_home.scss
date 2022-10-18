@@ -4,9 +4,25 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+    &::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("../images/pattern/pathern_bg.jpg");
+        background-position: cover;
+        background-repeat: repeat;
+        background-size: 100%;
+        opacity: .5;
+    }
+}
+
 .go_up_button {
     @include mixins.flexAlign(center, center);
-    @include mixins.fixPos(99);
+    @include mixins.fixPos(100);
 
     bottom: 2em;
     right: 2em;
@@ -36,10 +52,10 @@ html, body {
     position: relative;
     width: 100%;
     height: 100vh;
-
-    &::before {
-        @include mixins.pattern;
-    }
+    
+    // &::before {
+    //     @include mixins.pattern;
+    // }
 
     & > div {
         @include mixins.flexAlign(center, center);
@@ -156,9 +172,9 @@ html, body {
 .pres_section {
     @include mixins.sectionWidth;
     
-    &::before {
-        @include mixins.patternReverse;
-    }
+    // &::before {
+    //     @include mixins.patternReverse;
+    // }
 
     .pres_content {
         position: relative;
@@ -260,9 +276,9 @@ html, body {
         height: fit-content;
         padding: 10px 0 20px;
 
-        &::before {
-            @include mixins.pattern;
-        }
+        // &::before {
+        //     @include mixins.pattern;
+        // }
 
         .pres_content {
             height: fit-content;
@@ -324,9 +340,9 @@ html, body {
 .skills_section {
     @include mixins.sectionWidth;
 
-    &::before {
-        @include mixins.pattern;
-    }
+    // &::before {
+    //     @include mixins.pattern;
+    // }
 
     .skills_content {
         position: relative;
@@ -527,10 +543,6 @@ html, body {
 .project_section {
     @include mixins.sectionWidth;
 
-    &::before {
-        @include mixins.pattern;
-    }
-
     .project_content {
         position: relative;
         z-index: 2;
@@ -547,12 +559,75 @@ html, body {
             flex-direction: column;
             align-items: center;
 
-            .web_project_card {
+            .projects_type {
+                position: relative;
                 display: flex;
                 width: 100%;
                 align-items: center;
                 justify-content: center;
+                padding-right: 50px;
                 gap: 20px;
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    margin-right: -20px;
+                    position: static;
+                    color: #BDA46D;
+                    font-size: 50px;
+                    font-weight: bold;
+                    transform: rotate(-90deg);
+                    transform-origin: center;
+                    border-bottom: 5px solid #BDA46D;
+                    height: 100px;
+                }
+
+                .card {
+                    border-radius: 20px;
+                    width: 100px;
+                    height: 100%;
+                    box-shadow: 0 8px 16px rgba($color: #000000, $alpha: .2);
+                    transition: all .4s ease;
+                    cursor: pointer;
+
+                    img {
+                        height: 400px;
+                        object-fit: cover;
+                        width: 100%;
+                        display: block;
+                        border-radius: 20px 20px 0 0;
+                    }
+
+                    .card_banner {
+                        border-radius: 0 0 20px 20px;
+                        height: 70px;
+                        border: none;
+                        background-color: #ffffff;
+                        padding: 1em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .card_left_part {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+
+                            h3, h4 {
+                                display: none;
+                            }
+                        }
+
+                        .card_right_part {
+                            display: none;
+                        }
+                    }
+                }
 
                 .card.active {
                     width: 600px;
@@ -575,6 +650,7 @@ html, body {
                         justify-content: space-between;
 
                         .card_left_part {
+                            width: fit-content;
                             display: flex;
                             align-items: center;
                             gap: 20px;
@@ -613,47 +689,6 @@ html, body {
                                 font-size: 30px;
                                 color: #BDA46D;
                             }
-                        }
-                    }
-                }
-
-                .card {
-                    border-radius: 20px;
-                    width: 100px;
-                    height: 100%;
-                    box-shadow: 0 8px 16px rgba($color: #000000, $alpha: .2);
-                    transition: all .4s ease-in;
-                    cursor: pointer;
-
-                    img {
-                        height: 400px;
-                        object-fit: cover;
-                        width: 100%;
-                        display: block;
-                    }
-
-                    .card_banner {
-                        height: 70px;
-                        border: none;
-                        background-color: #ffffff;
-                        padding: 1em 2em;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-
-                        .card_left_part {
-                            img {
-                                width: 35px;
-                                height: 35px;
-                            }
-
-                            h3, h4 {
-                                display: none;
-                            }
-                        }
-
-                        .card_right_part {
-                            display: none;
                         }
                     }
                 }
