@@ -303,9 +303,22 @@ body::before {
   color: #BDA46D;
 }
 
+@media screen and (max-width: 1000px) {
+  .title h2 {
+    top: 80px;
+  }
+}
 @media screen and (max-width: 625px) {
   .title h1 {
     font-size: 90px;
+  }
+}
+@media screen and (max-width: 587px) {
+  .title h1 {
+    font-size: 70px;
+  }
+  .title h2 {
+    font-size: 40px;
   }
 }
 .welcome_section {
@@ -399,6 +412,11 @@ body::before {
     width: 100%;
   }
 }
+@media screen and (max-width: 450px) {
+  .title h1 {
+    font-size: 60px;
+  }
+}
 .pres_section {
   position: relative;
   padding: 10px 0 10px;
@@ -475,9 +493,6 @@ body::before {
 }
 
 @media screen and (max-width: 1000px) {
-  .title h2 {
-    top: 80px !important;
-  }
   .pres {
     width: 100% !important;
   }
@@ -706,24 +721,6 @@ body::before {
     height: 60vh;
     width: 90%;
   }
-  .title {
-    font-family: "DM Serif Display", serif;
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 100px;
-  }
-  .title h1 {
-    font-size: 80px;
-    opacity: 0.3;
-    text-transform: uppercase;
-  }
-  .title h2 {
-    font-size: 30px;
-    text-transform: capitalize;
-    color: #BDA46D;
-  }
 }
 .project_section {
   position: relative;
@@ -753,21 +750,20 @@ body::before {
 .project_section .project_content .projects_card .projects_type {
   position: relative;
   display: flex;
+  flex-direction: column;
+  gap: 50px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 }
 .project_section .project_content .projects_card .projects_type h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50vh;
   position: static;
   color: #BDA46D;
   font-size: 50px;
   font-weight: bold;
-  transform: rotate(-90deg);
   transform-origin: center;
   border-bottom: 5px solid #BDA46D;
   height: 100px;
@@ -776,10 +772,8 @@ body::before {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 70%;
 }
 .project_section .project_content .projects_card .projects_type .cards .card {
-  border-radius: 20px;
   width: 100px;
   height: 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -791,10 +785,8 @@ body::before {
   object-fit: cover;
   width: 100%;
   display: block;
-  border-radius: 20px 20px 0 0;
 }
 .project_section .project_content .projects_card .projects_type .cards .card .card_banner {
-  border-radius: 0 0 20px 20px;
   height: 70px;
   border: none;
   background-color: #ffffff;
@@ -813,10 +805,14 @@ body::before {
   height: 50px;
 }
 .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h3, .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h4 {
-  display: none;
+  width: 0;
+  font-size: 0;
+  transition: all 0.4s ease;
 }
 .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_right_part {
-  display: none;
+  width: 0;
+  font-size: 0;
+  transition: all 0.4s ease;
 }
 .project_section .project_content .projects_card .projects_type .cards .card.active {
   width: 600px;
@@ -848,13 +844,13 @@ body::before {
   height: 70px;
 }
 .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part h3 {
-  display: block;
+  width: 100%;
   font-size: 24px;
   color: #BDA46D;
   margin-bottom: 5px;
 }
 .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part h4 {
-  display: block;
+  width: 100%;
   text-transform: uppercase;
   color: #222627;
   opacity: 0.3;
@@ -873,19 +869,7 @@ body::before {
   color: #BDA46D;
 }
 
-@media screen and (max-width: 1200px) {
-  .project_section .project_content .projects_card .projects_type h2 {
-    width: 40vh;
-  }
-}
 @media screen and (max-width: 1000px) {
-  .project_section .project_content .projects_card .projects_type {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .project_section .project_content .projects_card .projects_type h2 {
-    transform: rotate(0);
-  }
   .project_section .project_content .projects_card .projects_type .cards {
     width: 70%;
     flex-direction: column;
@@ -967,6 +951,196 @@ body::before {
 @media screen and (max-width: 580px) {
   .project_section .project_content .projects_card .projects_type .cards .card.active .card_cover {
     height: 300px;
+  }
+}
+.contact_section {
+  position: relative;
+  padding: 10px 0 10px;
+  width: 100%;
+  min-height: 100vh;
+}
+.contact_section .contact_content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  margin: 60px auto;
+}
+.contact_section .contact_content h2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.contact_section .contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4em 0 2em;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.contact_section .contact_form button {
+  border: none;
+  padding: 1em 2em;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: "DM Serif Display", serif;
+  background-color: #BDA46D;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.contact_section .contact_form button:hover {
+  background-color: #222627;
+}
+.contact_section .contact_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  margin: 25px 0 0;
+  padding: 2em 0;
+}
+.contact_section .contact_form form > div {
+  width: 90%;
+}
+.contact_section .contact_form form .form_civil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact_section .contact_form form .form_civil .first_name, .contact_section .contact_form form .form_civil .last_name {
+  position: relative;
+  width: 48%;
+}
+.contact_section .contact_form form .form_civil .first_name label, .contact_section .contact_form form .form_civil .last_name label {
+  padding: 0 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 25%;
+  left: 15px;
+  color: #BDA46D;
+  font-family: "DM Serif Display", serif;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.contact_section .contact_form form .form_civil .first_name input, .contact_section .contact_form form .form_civil .last_name input {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #BDA46D;
+  width: 93%;
+  height: 30px;
+}
+.contact_section .contact_form form .form_civil .first_name input:focus, .contact_section .contact_form form .form_civil .last_name input:focus {
+  outline: none;
+  border: 2px solid #BDA46D;
+}
+.contact_section .contact_form form .form_civil .first_name input:focus ~ label, .contact_section .contact_form form .form_civil .last_name input:focus ~ label {
+  top: -25%;
+  font-size: 16px;
+}
+.contact_section .contact_form form .form_mail {
+  position: relative;
+}
+.contact_section .contact_form form .form_mail label {
+  padding: 0 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 25%;
+  left: 15px;
+  color: #BDA46D;
+  font-family: "DM Serif Display", serif;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.contact_section .contact_form form .form_mail input {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #BDA46D;
+  width: 97%;
+  height: 30px;
+}
+.contact_section .contact_form form .form_mail input:focus {
+  outline: none;
+  border: 2px solid #BDA46D;
+}
+.contact_section .contact_form form .form_mail input:focus ~ label {
+  top: -25%;
+  font-size: 16px;
+}
+.contact_section .contact_form form .form_message {
+  position: relative;
+}
+.contact_section .contact_form form .form_message label {
+  padding: 0 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 25%;
+  left: 15px;
+  color: #BDA46D;
+  font-family: "DM Serif Display", serif;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.contact_section .contact_form form .form_message textarea {
+  resize: none;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #BDA46D;
+  width: 97%;
+  height: 30px;
+  transition: height 0.4s;
+}
+.contact_section .contact_form form .form_message textarea:focus {
+  height: 30vh;
+  outline: none;
+  border: 2px solid #BDA46D;
+}
+.contact_section .contact_form form .form_message textarea:focus ~ label {
+  top: -4%;
+  font-size: 16px;
+}
+.contact_section .contact_form form button {
+  background-color: #BDA46D;
+  border: none;
+  color: #ffffff;
+  margin: 20px 0 0;
+  padding: 10px 45px;
+  font-size: 24px;
+  font-family: "DM Serif Display", serif;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.contact_section .contact_form form button:hover {
+  background-color: #222627;
+}
+
+@media screen and (max-width: 870px) {
+  .contact_section .contact_form form .form_civil {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact_section .contact_form form .form_civil .first_name, .contact_section .contact_form form .form_civil .last_name {
+    width: 100%;
+  }
+  .contact_section .contact_form form .form_civil .first_name input, .contact_section .contact_form form .form_civil .last_name input {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 797px) {
+  .contact_section .contact_form {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .contact_section .contact_form {
+    width: 100%;
   }
 }
 footer {
