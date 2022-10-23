@@ -117,26 +117,50 @@
                                     </a>
                                 </div>
                             </div>
-
-                            <div class="card">
-                                <img src="images/project-cover/onmix-cover.jpg" alt="" class="card_cover">
-                                <div class="card_banner">
-                                    <div class="card_left_part">
-                                        <img src="images/project-logo/onmix_site_icon.png" alt="">
-                                        <div class="card_banner_text">
-                                            <h3>Onmix</h3>
-                                            <h4>y1 project / web site</h4>
-                                        </div>
-                                    </div>
-
-                                    <a href="www.onmix.tk" class="card_right_part">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                         
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section">
+            <div class="contact_content">
+                <div class="title">
+                    <h1>Contact Me</h1>
+                    <h2>How to contact me ?</h2>
+                </div>
+                <div class='contact_form'>
+                    <button>lefetey.nathan@gmail.com</button>
+
+                    <form action="" method="POST">
+                        <div class="form_civil">
+                            <div class="first_name">
+                                <input type="text" name="first_name" required>
+                                <label for="first_name">Your first name</label>
+                            </div>
+
+                            <div class="last_name">
+                                <input type="text" name="last_name" required>
+                                <label for="last_name">Your last name</label>
+                            </div>
+                        </div>
+
+                        <div class="form_mail">
+                            <input type="email" name="email" required>
+                            <label for="email">Your email address</label>
+                        </div>
+
+                        <div class="form_message">
+                            <textarea type="text" name="message" required></textarea>
+                            <label for="mail_message">Your message</label>
+                        </div>
+
+                        <button type="submit">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Send
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
