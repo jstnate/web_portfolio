@@ -22,7 +22,7 @@ body {
 
 .go_up_button {
     @include mixins.flexAlign(center, center);
-    @include mixins.fixPos(100);
+    @include mixins.fixPos(80);
 
     bottom: 2em;
     right: 2em;
@@ -76,6 +76,21 @@ body {
     }
 }
 
+@media screen and (max-width: 410px) {
+    .title {
+        height: 10vh;
+
+        h1{
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 30px;
+            
+        }
+    }
+}
+
 .welcome_section {
     position: relative;
     width: 100%;
@@ -103,6 +118,7 @@ body {
         .welcome_text {
             position: relative;
             height: 20vh;
+            width: 80vh;
 
             .name_title, .job_title {
                 font-family: 'DM Serif Display', serif;
@@ -115,7 +131,7 @@ body {
             }
             
             .job_title {
-                font-size: 50px;
+                font-size: 60px;
                 color: #222627;
                 position: absolute;
                 right: 0;
@@ -172,15 +188,32 @@ body {
     }
 }
 
+@media screen and (max-width: 620px) {
+    .welcome_section > div .welcome_text {
+        width: 70vh;
+
+        .name_title {
+            font-size: 70px;
+        }
+
+        .job_title {
+            font-size: 50px;
+        }
+    }
+}
+
 @media screen and (max-width: 580px) {
     .welcome_section {
         div {
             flex-direction: column;
+            width: 80%;
             img {
                 display: block;
                 width: 60%;
             }
             .welcome_text {
+                width: 60vh;
+
                 h1 {
                     display: none
                 }
@@ -192,8 +225,18 @@ body {
                 h2 {
                     width: 100%;
                 }
+
+                .job_title {
+                    font-size: 45px;
+                }
             }
         }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .welcome_section div .welcome_text {
+        width: 50vh;
     }
 }
 
@@ -201,6 +244,19 @@ body {
     .title {
         h1 {
             font-size: 60px
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .welcome_section div {
+    
+        img {
+            width: 80%
+        }
+
+        .welcome_text {
+            width: 40vh;
         }
     }
 }
@@ -336,14 +392,19 @@ body {
 }
 
 @media  screen and (max-width: 660px) {
-    .pres_section .pres_content .pres .text a {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        strong {
-            margin-top: 5px
+    .pres_section .pres_content .pres {
+        img {
+            width: 80%;
+        }
+        .text a {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            strong {
+                margin-top: 5px
+            }
         }
     }
 }
@@ -364,6 +425,13 @@ body {
             }
         }
     } 
+    
+}
+
+@media screen and (max-width: 410px) {
+    .pres_section .pres_content .pres .text a {
+        width: 70%;
+    }
     
 }
 
@@ -563,6 +631,23 @@ body {
     .pres_section .pres_content .pres img {
         height: 60vh;
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .skills_section .skills_content .skill {
+
+        .front img {
+            width: 70%
+        }
+
+        .back img {
+            width: 60%
+        }
+
+        .design img {
+            width: 80%
+        }
     }
 }
 
@@ -830,6 +915,16 @@ body {
     }
 }
 
+@media screen and (max-width: 410px) {
+    .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner {
+        padding: 1em;
+        .card_left_part img {
+            width: 50px;
+            height: 50px
+        }
+    }
+}
+
 .contact_section {
     @include mixins.sectionWidth;
 
@@ -1040,5 +1135,19 @@ body {
 @media screen and (max-width: 520px) {
     .contact_section .contact_form {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .contact_section {
+        .contact_content {
+            width: 100%;
+            margin: 60px 0;
+
+            button {
+                padding: 1em;
+                font-size: 15px;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 <footer>
     <span>
-        Made by <a href="https://www.linkedin.com/in/nathanlefetey/">Nathan LEFETEY</a> &copy 2022 Copyright All Rights
+        Made by <a href="https://www.linkedin.com/in/nathanlefetey/">Nathan LEFETEY</a> &copy 2022 <span class="responsive_footer">Copyright All Rights</span>
     </span>
 </footer>
 

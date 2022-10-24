@@ -113,15 +113,19 @@ header {
             .nav_link {
                 position: absolute;
                 left: 0;
-                top: -20vh;
+                top: 0;
                 height: 100vh;
                 width: 100%;
-                padding: .3em 3em;
+                padding-bottom: 2em;
+                padding-left: 0;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 background-color: #BDA46D;
+                transform: scaleY(0);
+                transform-origin: top;
                 transition: all .5s;
+                gap: 2em;
 
                 .scroll_link  {
                     flex-direction: column;
@@ -139,7 +143,7 @@ header {
             }
 
             .nav_link.active {
-                bottom: 0;
+                transform: scaleY(1);
             }
 
             .burger_btn {

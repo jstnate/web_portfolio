@@ -23,3 +23,9 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 410px) {
+    .responsive_footer {
+        display: none;
+    }
+}
