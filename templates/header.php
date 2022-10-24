@@ -10,9 +10,9 @@
 
         <div class="nav_link">
             <div class="scroll_link">
-                <a href="#about" title="Go on the presentation section">About</a>
-                <a href="#skills" title="Go on the skills section">Skills</a>
-                <a href="#projects" title="Go on the projects section">Projects</a>
+                <a href="#about" class="link_id" title="Go on the presentation section">About</a>
+                <a href="#skills" class="link_id" title="Go on the skills section">Skills</a>
+                <a href="#projects" class="link_id" title="Go on the projects section">Projects</a>
             </div>
             
             <div class="ext_link">

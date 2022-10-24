@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="design category">
-                        <h3>Experience</h3>
+                        <h3>Design</h3>
                         <img src="images/logos/logo_photoshop.png" alt="" class="icon-grid3-1">
                         <img src="images/logos/logo_illustrator.png" alt="" class="icon-grid3-2">
                         <img src="images/logos/logo_xd.png" alt=""  class="icon-grid3-3">
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="www.onmix.tk" class="card_right_part">
+                                    <a href="#Site-closed" class="card_right_part">
                                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>
                                 </div>
