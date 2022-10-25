@@ -1066,18 +1066,19 @@ body::before {
   background-color: #ffffff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.contact_section .contact_form button {
+.contact_section .contact_form a {
   border: none;
   padding: 1em 2em;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
   font-size: "DM Serif Display", serif;
   background-color: #BDA46D;
   transition: all 0.4s;
   cursor: pointer;
 }
-.contact_section .contact_form button:hover {
+.contact_section .contact_form a:hover {
   background-color: #222627;
 }
 .contact_section .contact_form form {
@@ -1127,6 +1128,14 @@ body::before {
   top: -25%;
   font-size: 16px;
 }
+.contact_section .contact_form form .form_civil .first_name input:valid, .contact_section .contact_form form .form_civil .last_name input:valid {
+  outline: none;
+  border: 2px solid #BDA46D;
+}
+.contact_section .contact_form form .form_civil .first_name input:valid ~ label, .contact_section .contact_form form .form_civil .last_name input:valid ~ label {
+  top: -25%;
+  font-size: 16px;
+}
 .contact_section .contact_form form .form_mail {
   position: relative;
 }
@@ -1153,6 +1162,14 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_mail input:focus ~ label {
+  top: -25%;
+  font-size: 16px;
+}
+.contact_section .contact_form form .form_mail input:valid {
+  outline: none;
+  border: 2px solid #BDA46D;
+}
+.contact_section .contact_form form .form_mail input:valid ~ label {
   top: -25%;
   font-size: 16px;
 }
@@ -1188,6 +1205,14 @@ body::before {
   top: -4%;
   font-size: 16px;
 }
+.contact_section .contact_form form .form_message textarea:valid {
+  outline: none;
+  border: 2px solid #BDA46D;
+}
+.contact_section .contact_form form .form_message textarea:valid ~ label {
+  top: -25%;
+  font-size: 16px;
+}
 .contact_section .contact_form form button {
   background-color: #BDA46D;
   border: none;
@@ -1204,6 +1229,16 @@ body::before {
 }
 .contact_section .contact_form form button:hover {
   background-color: #222627;
+}
+.contact_section .contact_form form .submit_message {
+  background-color: #BDA46D;
+  border: none;
+  color: #ffffff;
+  margin: 20px 0 0;
+  padding: 10px 45px;
+  font-size: 24px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
 }
 
 @media screen and (max-width: 870px) {
@@ -1244,7 +1279,7 @@ body::before {
 }
 footer {
   position: relative;
-  z-index: 99;
+  z-index: 50;
   width: 100%;
   height: 8vh;
   background-color: #BDA46D;

@@ -131,36 +131,47 @@
                     <h2>How to contact me ?</h2>
                 </div>
                 <div class='contact_form'>
-                    <button>lefetey.nathan@gmail.com</button>
+                    <?php if (!isset ($_POST['submit'])) { ?>
+                        <a href="mailto: lefetey.nathan@gmail.com?subject=Contact from portfolio">lefetey.nathan@gmail.com</a>
 
-                    <form action="" method="POST">
-                        <div class="form_civil">
-                            <div class="first_name">
-                                <input type="text" name="first_name" required>
-                                <label for="first_name">Your first name</label>
+                        <form action="mail_sending.php" method="POST">
+                            <div class="form_civil">
+                                <div class="first_name">
+                                    <input type="text" name="first_name" required>
+                                    <label for="first_name">Your first name</label>
+                                </div>
+
+                                <div class="last_name">
+                                    <input type="text" name="last_name" required>
+                                    <label for="last_name">Your last name</label>
+                                </div>
                             </div>
 
-                            <div class="last_name">
-                                <input type="text" name="last_name" required>
-                                <label for="last_name">Your last name</label>
+                            <div class="form_mail">
+                                <input type="email" name="email" required>
+                                <label for="email">Your email address</label>
                             </div>
-                        </div>
 
-                        <div class="form_mail">
-                            <input type="email" name="email" required>
-                            <label for="email">Your email address</label>
-                        </div>
+                            <div class="form_message">
+                                <textarea type="text" name="message" required></textarea>
+                                <label for="mail_message">Your message</label>
+                            </div>
 
-                        <div class="form_message">
-                            <textarea type="text" name="message" required></textarea>
-                            <label for="mail_message">Your message</label>
-                        </div>
 
-                        <button type="submit">
-                            <i class="fa-regular fa-paper-plane"></i>
-                            Send
-                        </button>
-                    </form>
+                        
+                            <button type="submit">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                Send
+                            </button>
+                        </form>
+                    <?php } ?>
+
+                    <?php if (isset ($_POST['submit'])) { ?>
+                        <div class="submit_message">
+                            <span>Thank you for contacting me ! Your message has been sent.</span>
+                            <span>You will be answered by mail</span>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </section>

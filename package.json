@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/jstnate/web_portfolio/issues"
   },
-  "homepage": "https://github.com/jstnate/web_portfolio#readme"
+  "homepage": "https://github.com/jstnate/web_portfolio#readme",
+
+  "server name": {
+  "name": "server name",
+  "host": "localhost",
+  "port": "1025",
+  "mechanism": "PLAIN"
+}
 }

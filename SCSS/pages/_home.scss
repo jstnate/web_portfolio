@@ -959,12 +959,13 @@ body {
         background-color: #ffffff;
         box-shadow: 0 8px 16px rgba($color: #000000, $alpha: .2);
 
-        button {
+        a {
             border: none;
             padding: 1em 2em;
             font-size: 20px;
             font-weight: bold;
             color: #ffffff;
+            text-decoration: none;
             font-size: 'DM Serif Display', serif;
             background-color: #BDA46D;
             transition: all .4s;
@@ -1026,6 +1027,16 @@ body {
                                 font-size: 16px;
                             }
                         }
+
+                        &:valid {
+                            outline: none;
+                            border: 2px solid #BDA46D;
+                        
+                            & ~ label {
+                                top: -25%;
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }
@@ -1053,6 +1064,16 @@ body {
                     height: 30px;
 
                     &:focus {
+                        outline: none;
+                        border: 2px solid #BDA46D;
+                    
+                        & ~ label {
+                            top: -25%;
+                            font-size: 16px;
+                        }
+                    }
+
+                    &:valid {
                         outline: none;
                         border: 2px solid #BDA46D;
                     
@@ -1098,6 +1119,16 @@ body {
                             font-size: 16px;
                         }
                     }
+
+                    &:valid {
+                        outline: none;
+                        border: 2px solid #BDA46D;
+                    
+                        & ~ label {
+                            top: -25%;
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
 
@@ -1118,6 +1149,17 @@ body {
                 &:hover {
                     background-color: #222627;
                 }
+            }
+
+            .submit_message {
+                background-color: #BDA46D;
+                border: none;
+                color: #ffffff;
+                margin: 20px 0 0;
+                padding: 10px 45px;
+                font-size: 24px;
+                font-family: 'DM Serif Display', serif;
+                text-align: center;
             }
         }
     }
