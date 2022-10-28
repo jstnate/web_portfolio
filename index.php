@@ -11,12 +11,12 @@
             <i class="fa-solid fa-angles-up fa-2x"></i>
         </a>
 
-        <section id="first_section" class="welcome_section">
+        <section id="first_section" class="welcome_section smooth_appear">
             <div>
                 <img src="images/pdp/logo_nate_grd.png" alt="">
 
                 <div class="welcome_text">
-                    <h1 class="name_title">Nathan <span>LEFETEY</span></h1>
+                    <h1 class="name_title">Nathan LEFETEY</h1>
                     <hr>
                     <h2 class="job_title">Full-stack Developper</h2>
                 </div>
@@ -24,7 +24,7 @@
         </section>
 
         <section class="pres_section" id="about">
-            <div class="pres_content">
+            <div class="pres_content smooth_appear">
                 <div class="title">
                     <h1>
                         about me
@@ -59,7 +59,7 @@
         </section>
 
         <section class="skills_section" id="skills">
-            <div class="skills_content">
+            <div class="skills_content smooth_appear">
                 <div class="title">
                     <h1>my skills</h1>
                     <h2>What i can do ?</h2>
@@ -91,7 +91,7 @@
         </section>
 
         <section id="projects" class="project_section">
-            <div class="project_content">
+            <div class="project_content smooth_appear">
                 <div class="title">
                     <h1>my project</h1>
                     <h2>What i've done ?</h2>
@@ -124,57 +124,61 @@
             </div>
         </section>
 
-        <section class="contact_section">
-            <div class="contact_content">
+        <!-- <section class="contact_section">
+            <div class="contact_content ">
                 <div class="title">
                     <h1>Contact Me</h1>
                     <h2>How to contact me ?</h2>
                 </div>
-                <div class='contact_form'>
-                    <?php if (!isset ($_POST['submit'])) { ?>
-                        <a href="mailto: lefetey.nathan@gmail.com?subject=Contact from portfolio">lefetey.nathan@gmail.com</a>
+                <?php // if (!isset($submitted)) { ?> 
+                    <div class='contact_form'>
+                <?php // } ?>
+                <?php // if (isset($submitted) && $submitted == true) { ?> 
+                    <div class='contact_form submitted'>
+                <?php // } ?>
 
-                        <form action="mail_sending.php" method="POST">
-                            <div class="form_civil">
-                                <div class="first_name">
-                                    <input type="text" name="first_name" required>
-                                    <label for="first_name">Your first name</label>
-                                </div>
+                <?php // if (!isset($submitted)) { ?> 
+                    <a href="mailto: lefetey.nathan@gmail.com?subject=Contact from portfolio" id="mail_link">lefetey.nathan@gmail.com</a>
 
-                                <div class="last_name">
-                                    <input type="text" name="last_name" required>
-                                    <label for="last_name">Your last name</label>
-                                </div>
+                    <form action="database/mail_sending.php" method="POST" id="form">
+                        <fieldset class="form_civil">
+                            <div class="first_name">
+                                <input type="text" name="first_name" required>
+                                <label for="first_name">Your first name</label>
                             </div>
 
-                            <div class="form_mail">
-                                <input type="email" name="email" required>
-                                <label for="email">Your email address</label>
+                            <div class="last_name">
+                                <input type="text" name="last_name" required>
+                                <label for="last_name">Your last name</label>
                             </div>
+                        </fieldset>
 
-                            <div class="form_message">
-                                <textarea type="text" name="message" required></textarea>
-                                <label for="mail_message">Your message</label>
-                            </div>
+                        <fieldset class="form_mail">
+                            <input type="email" name="email" required>
+                            <label for="email">Your email address</label>
+                        </fieldset>
 
-
-                        
-                            <button type="submit">
-                                <i class="fa-regular fa-paper-plane"></i>
-                                Send
-                            </button>
-                        </form>
-                    <?php } ?>
-
-                    <?php if (isset ($_POST['submit'])) { ?>
-                        <div class="submit_message">
-                            <span>Thank you for contacting me ! Your message has been sent.</span>
-                            <span>You will be answered by mail</span>
-                        </div>
-                    <?php } ?>
+                        <fieldset class="form_message">
+                            <textarea type="text" name="message" required></textarea>
+                            <label for="mail_message">Your message</label>
+                        </fieldset>
+                    
+                        <button id="submit_btn" type="submit">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Send
+                        </button>
+                    </form>
+                    <?php // } ?>
+                    
+                    <?php //if (isset($submitted) && $submitted == true) { ?> 
+                    <div class="submit_message">
+                        <span>Thank you for contacting me ! Your message has been sent.</span>
+                        <span>You will be answered by mail</span>
+                    </div>
+                    <?php // } ?>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <?php require_once 'templates/footer.php'; ?>
