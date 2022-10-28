@@ -1,0 +1,31 @@
+{
+  "name": "web_portfolio",
+  "version": "1.0.0",
+  "description": "\"link\"",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/output.scss:scss/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstnate/web_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstnate/web_portfolio/issues"
+  },
+  "homepage": "https://github.com/jstnate/web_portfolio#readme",
+
+  "server name": {
+  "name": "server name",
+  "host": "localhost",
+  "port": "1025",
+  "mechanism": "PLAIN"
+}
+}

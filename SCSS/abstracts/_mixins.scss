@@ -1,0 +1,69 @@
+@mixin flexAlign($align, $justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin fixPos($index) {
+    position: fixed;
+    z-index: $index;
+}
+
+@mixin sectionWidth {
+    position: relative;
+    padding: 10px 0 10px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@mixin sectionTitle {
+    font-family: 'DM Serif Display', serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    
+        h1 {
+            font-size: 100px;
+            opacity: 0.3;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-transform: capitalize;
+            color: #BDA46D;
+        }
+}
+
+
+@mixin responsiveSectionTitle {
+    font-family: 'DM Serif Display', serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+
+        h1 {
+            font-size: 80px;
+            opacity: 0.3;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-transform: capitalize;
+            color: #BDA46D;
+        }
+    }
+
+@mixin h2Position($right, $bottom) {
+    
+    h2 {
+        position: absolute;
+        right: $right;
+        bottom: $bottom;
+    }
+}
