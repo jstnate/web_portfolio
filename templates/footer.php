@@ -4,6 +4,7 @@
     </span>
 </footer>
 
+<script src="js/smooth-blur-anim.js"></script>
 <script src="js/burger-menu-script.js"></script>
 <script src="js/text-header-anim.js"></script>
 <script src="js/project-card-anim.js"></script>
