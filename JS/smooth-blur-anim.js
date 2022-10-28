@@ -17,10 +17,8 @@ const animatedSection = document.querySelectorAll('.smooth_appear').forEach((ite
                 }
             });
         }
-        
         const animated = new IntersectionObserver(animObserver, animOptions)
         animated.observe(item)
     }
-    
 })
 
