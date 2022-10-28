@@ -1,10 +1,58 @@
-<?php 
-    $pageTitle = "Nathan LEFETEY - Portfolio";
-    require_once "templates/doctype.php"
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="SCSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome link  -->
+    <script src="https://kit.fontawesome.com/b050931f68.js" crossorigin="anonymous"></script>
+        
+    <!-- Page logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/pdp/icon_nate.png" border-radius="50%">
+
+    <title>Nathan LEFETEY - Portfolio</title>
+</head>
 <body>
-    <?php require_once "templates/header.php" ?>
+    <header>
+        <nav> 
+            <div class="home_link">
+                <a href="index.php"><img src="images/pdp/logo_nate_blc.png" alt="" class="logo"></a>
+    
+                <h2>
+                    <span class="txt-rotate wrap" data-period="1000" data-rotate='[ "@jstnate", "Web Portfolio", "Home Page", "Nathan LEFETEY"]'></span>
+                </h2>
+            </div>
+    
+            <div class="nav_link">
+                <div class="scroll_link">
+                    <a href="#about" class="link_id" title="Go on the presentation section">About</a>
+                    <a href="#skills" class="link_id" title="Go on the skills section">Skills</a>
+                    <a href="#projects" class="link_id" title="Go on the projects section">Projects</a>
+                </div>
+                
+                <div class="ext_link">
+                    <a href="https://github.com/jstnate" title="Go on my github page"><i class="fa-brands fa-lg fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nathanlefetey/" title="Go on my linkedin page"><i class="fa-brands fa-lg fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <div class="burger_btn">
+                <span class="top-bar"></span>
+                <span class="mid-bar"></span>
+                <span class="bottom-bar"></span>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <a href="#first_section" class="go_up_button" title="Go on the top">
@@ -123,65 +171,18 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="contact_section">
-            <div class="contact_content ">
-                <div class="title">
-                    <h1>Contact Me</h1>
-                    <h2>How to contact me ?</h2>
-                </div>
-                <?php // if (!isset($submitted)) { ?> 
-                    <div class='contact_form'>
-                <?php // } ?>
-                <?php // if (isset($submitted) && $submitted == true) { ?> 
-                    <div class='contact_form submitted'>
-                <?php // } ?>
-
-                <?php // if (!isset($submitted)) { ?> 
-                    <a href="mailto: lefetey.nathan@gmail.com?subject=Contact from portfolio" id="mail_link">lefetey.nathan@gmail.com</a>
-
-                    <form action="database/mail_sending.php" method="POST" id="form">
-                        <fieldset class="form_civil">
-                            <div class="first_name">
-                                <input type="text" name="first_name" required>
-                                <label for="first_name">Your first name</label>
-                            </div>
-
-                            <div class="last_name">
-                                <input type="text" name="last_name" required>
-                                <label for="last_name">Your last name</label>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form_mail">
-                            <input type="email" name="email" required>
-                            <label for="email">Your email address</label>
-                        </fieldset>
-
-                        <fieldset class="form_message">
-                            <textarea type="text" name="message" required></textarea>
-                            <label for="mail_message">Your message</label>
-                        </fieldset>
-                    
-                        <button id="submit_btn" type="submit">
-                            <i class="fa-regular fa-paper-plane"></i>
-                            Send
-                        </button>
-                    </form>
-                    <?php // } ?>
-                    
-                    <?php //if (isset($submitted) && $submitted == true) { ?> 
-                    <div class="submit_message">
-                        <span>Thank you for contacting me ! Your message has been sent.</span>
-                        <span>You will be answered by mail</span>
-                    </div>
-                    <?php // } ?>
-                </div>
-            </div>
-        </section> -->
     </main>
 
-    <?php require_once 'templates/footer.php'; ?>
+    <footer>
+        <span>
+            Made by <a href="https://www.linkedin.com/in/nathanlefetey/">Nathan LEFETEY</a> &copy 2022 <span class="responsive_footer">Copyright All Rights</span>
+        </span>
+    </footer>
+    
+    <script src="js/smooth-blur-anim.js"></script>
+    <script src="js/burger-menu-script.js"></script>
+    <script src="js/text-header-anim.js"></script>
+    <script src="js/project-card-anim.js"></script>
 </body>
 </html>
 
