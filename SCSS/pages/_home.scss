@@ -48,6 +48,17 @@ body {
     @include mixins.sectionTitle;
 }
 
+.smooth_appear {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.blur_reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media screen and (max-width: 1000px) {
     .title {
         h2 {
@@ -108,10 +119,6 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    
-    // &::before {
-    //     @include mixins.pattern;
-    // }
 
     & > div {
         @include mixins.flexAlign(center, center);
@@ -130,7 +137,7 @@ body {
 
         .welcome_text {
             position: relative;
-            height: 20vh;
+            height: 170px;
             width: 80vh;
 
             .name_title, .job_title {
@@ -181,11 +188,14 @@ body {
                 display: none;
             }
 
-            .welcome_text .job_title {
-                position: relative;
-                right: auto;
-                left: auto;
-                text-align: center
+            .welcome_text {
+                .name_title {
+                    text-align: center;
+                }
+                .job_title {
+                    position: relative;
+                    text-align: center
+                }
             }
         }
     }
@@ -939,7 +949,9 @@ body {
 }
 
 .contact_section {
-    @include mixins.sectionWidth;
+    position: relative;
+    padding: 10px 0 10px;
+    width: 100%;
 
     .contact_content {
         position: relative;
@@ -958,6 +970,12 @@ body {
         padding: 4em 0 2em;
         background-color: #ffffff;
         box-shadow: 0 8px 16px rgba($color: #000000, $alpha: .2);
+
+        &.submitted {
+            height: 25vh;
+            justify-content: center;
+            padding: 0;
+        }
 
         a {
             border: none;
@@ -985,7 +1003,7 @@ body {
             margin: 25px 0 0;
             padding: 2em 0;
 
-            & > div {
+            & > fieldset {
                 width: 90%;
             }
 
@@ -1023,7 +1041,7 @@ body {
                             border: 2px solid #BDA46D;
                         
                             & ~ label {
-                                top: -25%;
+                                top: -10px;
                                 font-size: 16px;
                             }
                         }
@@ -1033,7 +1051,7 @@ body {
                             border: 2px solid #BDA46D;
                         
                             & ~ label {
-                                top: -25%;
+                                top: -10px;
                                 font-size: 16px;
                             }
                         }
@@ -1068,7 +1086,7 @@ body {
                         border: 2px solid #BDA46D;
                     
                         & ~ label {
-                            top: -25%;
+                            top: -10px;
                             font-size: 16px;
                         }
                     }
@@ -1078,7 +1096,7 @@ body {
                         border: 2px solid #BDA46D;
                     
                         & ~ label {
-                            top: -25%;
+                            top: -10px;
                             font-size: 16px;
                         }
                     }
@@ -1108,6 +1126,7 @@ body {
                     width: 97%;
                     height: 30px;
                     transition: height .4s;
+                    font-family: sans-serif;
 
                     &:focus {
                         height: 30vh;
@@ -1115,7 +1134,7 @@ body {
                         border: 2px solid #BDA46D;
                     
                         & ~ label {
-                            top: -4%;
+                            top: -10px;
                             font-size: 16px;
                         }
                     }
@@ -1125,7 +1144,7 @@ body {
                         border: 2px solid #BDA46D;
                     
                         & ~ label {
-                            top: -25%;
+                            top: -10px;
                             font-size: 16px;
                         }
                     }
@@ -1161,6 +1180,16 @@ body {
                 font-family: 'DM Serif Display', serif;
                 text-align: center;
             }
+        }
+
+        .submit_message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #BDA46D;
+            font-family: 'DM Serif Display';
+            font-size: 20px;
         }
     }
 }

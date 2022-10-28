@@ -310,6 +310,17 @@ body::before {
   color: #BDA46D;
 }
 
+.smooth_appear {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.blur_reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 1000px) {
   .title h2 {
     top: 80px;
@@ -369,7 +380,7 @@ body::before {
 }
 .welcome_section > div .welcome_text {
   position: relative;
-  height: 20vh;
+  height: 170px;
   width: 80vh;
 }
 .welcome_section > div .welcome_text .name_title, .welcome_section > div .welcome_text .job_title {
@@ -409,10 +420,11 @@ body::before {
   .welcome_section div img {
     display: none;
   }
+  .welcome_section div .welcome_text .name_title {
+    text-align: center;
+  }
   .welcome_section div .welcome_text .job_title {
     position: relative;
-    right: auto;
-    left: auto;
     text-align: center;
   }
 }
@@ -1043,7 +1055,6 @@ body::before {
   position: relative;
   padding: 10px 0 10px;
   width: 100%;
-  min-height: 100vh;
 }
 .contact_section .contact_content {
   position: relative;
@@ -1065,6 +1076,11 @@ body::before {
   padding: 4em 0 2em;
   background-color: #ffffff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.contact_section .contact_form.submitted {
+  height: 25vh;
+  justify-content: center;
+  padding: 0;
 }
 .contact_section .contact_form a {
   border: none;
@@ -1090,7 +1106,7 @@ body::before {
   margin: 25px 0 0;
   padding: 2em 0;
 }
-.contact_section .contact_form form > div {
+.contact_section .contact_form form > fieldset {
   width: 90%;
 }
 .contact_section .contact_form form .form_civil {
@@ -1125,7 +1141,7 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_civil .first_name input:focus ~ label, .contact_section .contact_form form .form_civil .last_name input:focus ~ label {
-  top: -25%;
+  top: -10px;
   font-size: 16px;
 }
 .contact_section .contact_form form .form_civil .first_name input:valid, .contact_section .contact_form form .form_civil .last_name input:valid {
@@ -1133,7 +1149,7 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_civil .first_name input:valid ~ label, .contact_section .contact_form form .form_civil .last_name input:valid ~ label {
-  top: -25%;
+  top: -10px;
   font-size: 16px;
 }
 .contact_section .contact_form form .form_mail {
@@ -1162,7 +1178,7 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_mail input:focus ~ label {
-  top: -25%;
+  top: -10px;
   font-size: 16px;
 }
 .contact_section .contact_form form .form_mail input:valid {
@@ -1170,7 +1186,7 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_mail input:valid ~ label {
-  top: -25%;
+  top: -10px;
   font-size: 16px;
 }
 .contact_section .contact_form form .form_message {
@@ -1195,6 +1211,7 @@ body::before {
   width: 97%;
   height: 30px;
   transition: height 0.4s;
+  font-family: sans-serif;
 }
 .contact_section .contact_form form .form_message textarea:focus {
   height: 30vh;
@@ -1202,7 +1219,7 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_message textarea:focus ~ label {
-  top: -4%;
+  top: -10px;
   font-size: 16px;
 }
 .contact_section .contact_form form .form_message textarea:valid {
@@ -1210,7 +1227,7 @@ body::before {
   border: 2px solid #BDA46D;
 }
 .contact_section .contact_form form .form_message textarea:valid ~ label {
-  top: -25%;
+  top: -10px;
   font-size: 16px;
 }
 .contact_section .contact_form form button {
@@ -1239,6 +1256,15 @@ body::before {
   font-size: 24px;
   font-family: "DM Serif Display", serif;
   text-align: center;
+}
+.contact_section .contact_form .submit_message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #BDA46D;
+  font-family: "DM Serif Display";
+  font-size: 20px;
 }
 
 @media screen and (max-width: 870px) {
