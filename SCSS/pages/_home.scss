@@ -175,9 +175,13 @@ body {
     }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1140px) {
     .welcome_section > div {
         width: 90%;
+
+        .welcome_text {
+            width: 90vh;
+        }
     }
 }
 
@@ -271,7 +275,7 @@ body {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
     .welcome_section div {
     
         img {
@@ -451,7 +455,7 @@ body {
     
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
     .pres_section .pres_content .pres .text a {
         width: 70%;
     }
@@ -657,7 +661,7 @@ body {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
     .skills_section .skills_content .skill {
 
         .front img {
@@ -693,26 +697,33 @@ body {
             flex-direction: column;
             align-items: center;
 
+            .web_project {
+                padding-left: 50px;
+            }
+
             .projects_type {
                 position: relative;
                 display: flex;
-                flex-direction: column;
-                gap: 50px;
                 width: 100%;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
+                gap: 30px;
 
                 h2 {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    position: static;
+                    position: absolute;
+                    left: -10%;
+                    top: 40%;
                     color: #BDA46D;
                     font-size: 50px;
                     font-weight: bold;
+                    transform: rotate(-90deg);
                     transform-origin: center;
                     border-bottom: 5px solid #BDA46D;
                     height: 100px;
+                    width: 30%;
                 }
 
                 .cards {
@@ -747,10 +758,17 @@ body {
                                 display: flex;
                                 justify-content: center;
                                 width: 100%;
+
+                                .pantheon-logo {
+                                    font-size: 50px;
+                                    color: #520000;
+                                    transition: all .4s ease
+                                }
     
                                 img {
                                     width: 50px;
                                     height: 50px;
+                                    transition: all .4s ease;
                                 }
     
                                 h3, h4 {
@@ -793,7 +811,11 @@ body {
                                 align-items: center;
                                 gap: 20px;
                                 font-family: 'DM Serif Display', serif;
-    
+                                
+                                .pantheon-logo {
+                                    font-size: 60px;
+                                }
+
                                 img {
                                     width: 70px;
                                     height: 70px;
@@ -836,84 +858,108 @@ body {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .project_section .project_content .projects_card .projects_type .cards .card {
+        width: 80px;
+
+        &.active {
+            width: 550px;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px) {
-    .project_section .project_content .projects_card .projects_type {
-        .cards {
-            width: 70%;
+    .project_section .project_content .projects_card {
+        .web_project {
+            padding: 0;
+        }
+
+        .projects_type {
             flex-direction: column;
-        
-            .card {
+    
+            h2 {
+                position: static;
+                transform: rotate(0);
                 width: 100%;
-                height: fit-content;
-                
-                .card_cover {
-                    height: 0;
-                    transform-origin: bottom;
-                    transition: all .4s ease;
-                }
-
-                .card_banner {
-                    border-radius: 20px;
-                    height: 70px;
-                    background-color: #ffffff;
-                    padding: 1em 2em;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    .card_left_part {
-                        width: fit-content;
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-                        font-family: 'DM Serif Display', serif;
-
-                        img {
-                            width: 70px;
-                            height: 70px;
-                        }
-
-                        h3 {
-                            display: block;
-                            font-size: 24px;
-                            color: #BDA46D;
-                            margin-bottom: 5px;
-                        }
-
-                        h4 {
-                            display: block;
-                            text-transform: uppercase;
-                            color: #222627;
-                            opacity: .3;
-                            font-size: 16px;
-                        }
-                    }
-
-                    .card_right_part {
-                        text-decoration: none;
-                        width: 50px;
-                        height: 50px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        i {
-                            font-size: 30px;
-                            color: #BDA46D;
-                        }
-                    }
-                }
             }
+            .cards {
+                width: 80%;
+                flex-direction: column;
+            
+                .card {
+                    width: 100%;
+                    height: fit-content;
+                    
+                    .card_cover {
+                        height: 0;
+                        transform-origin: bottom;
+                        transition: all .4s ease;
+                    }
+    
+                    .card_banner {
+                        height: 70px;
+                        background-color: #ffffff;
+                        padding: 1em 2em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        .card_left_part {
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            font-family: 'DM Serif Display', serif;
+    
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+    
+                            .card_banner_text {
+                                width: 100%;
+    
+                                h3 {
+                                    display: block;
+                                    font-size: 24px;
+                                    color: #BDA46D;
+                                    margin-bottom: 5px;
+                                    width: 100%;
+                                }
         
-
-            .card.active {
-                width: 100%;
-                .card_cover {
-                    height: 400px;
+                                h4 {
+                                    display: block;
+                                    text-transform: uppercase;
+                                    color: #222627;
+                                    opacity: .3;
+                                    font-size: 16px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+    
+                        .card_right_part {
+                            text-decoration: none;
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            i {
+                                font-size: 30px;
+                                color: #BDA46D;
+                            }
+                        }
+                    }
                 }
-
-                .card_banner {
-                    border-radius: 0 0 20px 20px;
+            
+    
+                .card.active {
+                    width: 100%;
+                    .card_cover {
+                        height: 400px;
+                    }
                 }
             }
         }
@@ -922,7 +968,11 @@ body {
 
 @media screen and (max-width: 797px) {
     .project_section .project_content .projects_card .projects_type .cards {
-        width: 80%;
+        width: 90%;
+
+        .card .card_banner .card_left_part {
+            width: 80%;
+        }
     }
 }
 
@@ -933,17 +983,54 @@ body {
 } 
 
 @media screen and (max-width: 580px) {
-    .project_section .project_content .projects_card .projects_type .cards .card.active .card_cover {
-        height: 300px;
+    .project_section .project_content .projects_card .projects_type .cards .card {
+        &.active {
+            .card_cover {
+                height: 300px;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 410px) {
-    .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner {
-        padding: 1em;
-        .card_left_part img {
-            width: 50px;
-            height: 50px
+@media screen and (max-width: 480px) {
+    .project_section .project_content .projects_card .projects_type .cards .card {
+        .card_banner {
+            padding: .5em 1em;
+    
+            .card_left_part {
+                .pantheon-logo {
+                    font-size: 40px;
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px
+                }
+    
+                .card_banner_text {
+                    h3 {
+                        font-size: 20px;
+                    }
+    
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        &.active .card_banner{
+            padding: .5em 1em;
+
+            .card_left_part {
+                .pantheon-logo {
+                    font-size: 50px;
+                }
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
         }
     }
 }

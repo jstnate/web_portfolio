@@ -411,9 +411,12 @@ body::before {
     width: 80%;
   }
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1140px) {
   .welcome_section > div {
     width: 90%;
+  }
+  .welcome_section > div .welcome_text {
+    width: 90vh;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -479,7 +482,7 @@ body::before {
     font-size: 60px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .welcome_section div img {
     width: 80%;
   }
@@ -491,7 +494,6 @@ body::before {
   position: relative;
   padding: 10px 0 10px;
   width: 100%;
-  min-height: 100vh;
 }
 .pres_section .pres_content {
   position: relative;
@@ -621,7 +623,7 @@ body::before {
     width: 80%;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .pres_section .pres_content .pres .text a {
     width: 70%;
   }
@@ -630,7 +632,6 @@ body::before {
   position: relative;
   padding: 10px 0 10px;
   width: 100%;
-  min-height: 100vh;
 }
 .skills_section .skills_content {
   position: relative;
@@ -800,7 +801,7 @@ body::before {
     width: 90%;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .skills_section .skills_content .skill .front img {
     width: 70%;
   }
@@ -815,7 +816,6 @@ body::before {
   position: relative;
   padding: 10px 0 10px;
   width: 100%;
-  min-height: 100vh;
 }
 .project_section .project_content {
   position: relative;
@@ -836,26 +836,32 @@ body::before {
   flex-direction: column;
   align-items: center;
 }
+.project_section .project_content .projects_card .web_project {
+  padding-left: 50px;
+}
 .project_section .project_content .projects_card .projects_type {
   position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 50px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 .project_section .project_content .projects_card .projects_type h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: static;
+  position: absolute;
+  left: -10%;
+  top: 40%;
   color: #BDA46D;
   font-size: 50px;
   font-weight: bold;
+  transform: rotate(-90deg);
   transform-origin: center;
   border-bottom: 5px solid #BDA46D;
   height: 100px;
+  width: 30%;
 }
 .project_section .project_content .projects_card .projects_type .cards {
   display: flex;
@@ -889,9 +895,15 @@ body::before {
   justify-content: center;
   width: 100%;
 }
+.project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .pantheon-logo {
+  font-size: 50px;
+  color: #520000;
+  transition: all 0.4s ease;
+}
 .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part img {
   width: 50px;
   height: 50px;
+  transition: all 0.4s ease;
 }
 .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h3, .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h4 {
   width: 0;
@@ -928,6 +940,9 @@ body::before {
   gap: 20px;
   font-family: "DM Serif Display", serif;
 }
+.project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part .pantheon-logo {
+  font-size: 60px;
+}
 .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part img {
   width: 70px;
   height: 70px;
@@ -958,9 +973,28 @@ body::before {
   color: #BDA46D;
 }
 
+@media screen and (max-width: 1100px) {
+  .project_section .project_content .projects_card .projects_type .cards .card {
+    width: 80px;
+  }
+  .project_section .project_content .projects_card .projects_type .cards .card.active {
+    width: 550px;
+  }
+}
 @media screen and (max-width: 1000px) {
+  .project_section .project_content .projects_card .web_project {
+    padding: 0;
+  }
+  .project_section .project_content .projects_card .projects_type {
+    flex-direction: column;
+  }
+  .project_section .project_content .projects_card .projects_type h2 {
+    position: static;
+    transform: rotate(0);
+    width: 100%;
+  }
   .project_section .project_content .projects_card .projects_type .cards {
-    width: 70%;
+    width: 80%;
     flex-direction: column;
   }
   .project_section .project_content .projects_card .projects_type .cards .card {
@@ -973,7 +1007,6 @@ body::before {
     transition: all 0.4s ease;
   }
   .project_section .project_content .projects_card .projects_type .cards .card .card_banner {
-    border-radius: 20px;
     height: 70px;
     background-color: #ffffff;
     padding: 1em 2em;
@@ -982,28 +1015,33 @@ body::before {
     justify-content: space-between;
   }
   .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part {
-    width: fit-content;
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 20px;
     font-family: "DM Serif Display", serif;
   }
   .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h3 {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text {
+    width: 100%;
+  }
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h3 {
     display: block;
     font-size: 24px;
     color: #BDA46D;
     margin-bottom: 5px;
+    width: 100%;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h4 {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h4 {
     display: block;
     text-transform: uppercase;
     color: #222627;
     opacity: 0.3;
     font-size: 16px;
+    width: 100%;
   }
   .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_right_part {
     text-decoration: none;
@@ -1023,12 +1061,12 @@ body::before {
   .project_section .project_content .projects_card .projects_type .cards .card.active .card_cover {
     height: 400px;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner {
-    border-radius: 0 0 20px 20px;
-  }
 }
 @media screen and (max-width: 797px) {
   .project_section .project_content .projects_card .projects_type .cards {
+    width: 90%;
+  }
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part {
     width: 80%;
   }
 }
@@ -1042,265 +1080,32 @@ body::before {
     height: 300px;
   }
 }
-@media screen and (max-width: 410px) {
-  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner {
-    padding: 1em;
+@media screen and (max-width: 480px) {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner {
+    padding: 0.5em 1em;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part img {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .pantheon-logo {
+    font-size: 40px;
+  }
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part img {
     width: 50px;
     height: 50px;
   }
-}
-.contact_section {
-  position: relative;
-  padding: 10px 0 10px;
-  width: 100%;
-}
-.contact_section .contact_content {
-  position: relative;
-  z-index: 2;
-  width: 90%;
-  margin: 60px auto;
-}
-.contact_section .contact_content h2 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.contact_section .contact_form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  padding: 4em 0 2em;
-  background-color: #ffffff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.contact_section .contact_form.submitted {
-  height: 25vh;
-  justify-content: center;
-  padding: 0;
-}
-.contact_section .contact_form a {
-  border: none;
-  padding: 1em 2em;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: "DM Serif Display", serif;
-  background-color: #BDA46D;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-.contact_section .contact_form a:hover {
-  background-color: #222627;
-}
-.contact_section .contact_form form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 90%;
-  margin: 25px 0 0;
-  padding: 2em 0;
-}
-.contact_section .contact_form form > fieldset {
-  width: 90%;
-}
-.contact_section .contact_form form .form_civil {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.contact_section .contact_form form .form_civil .first_name, .contact_section .contact_form form .form_civil .last_name {
-  position: relative;
-  width: 48%;
-}
-.contact_section .contact_form form .form_civil .first_name label, .contact_section .contact_form form .form_civil .last_name label {
-  padding: 0 10px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 25%;
-  left: 15px;
-  color: #BDA46D;
-  font-family: "DM Serif Display", serif;
-  pointer-events: none;
-  transition: all 0.4s;
-}
-.contact_section .contact_form form .form_civil .first_name input, .contact_section .contact_form form .form_civil .last_name input {
-  padding: 5px 10px;
-  border: none;
-  border-bottom: 2px solid #BDA46D;
-  width: 93%;
-  height: 30px;
-}
-.contact_section .contact_form form .form_civil .first_name input:focus, .contact_section .contact_form form .form_civil .last_name input:focus {
-  outline: none;
-  border: 2px solid #BDA46D;
-}
-.contact_section .contact_form form .form_civil .first_name input:focus ~ label, .contact_section .contact_form form .form_civil .last_name input:focus ~ label {
-  top: -10px;
-  font-size: 16px;
-}
-.contact_section .contact_form form .form_civil .first_name input:valid, .contact_section .contact_form form .form_civil .last_name input:valid {
-  outline: none;
-  border: 2px solid #BDA46D;
-}
-.contact_section .contact_form form .form_civil .first_name input:valid ~ label, .contact_section .contact_form form .form_civil .last_name input:valid ~ label {
-  top: -10px;
-  font-size: 16px;
-}
-.contact_section .contact_form form .form_mail {
-  position: relative;
-}
-.contact_section .contact_form form .form_mail label {
-  padding: 0 10px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 25%;
-  left: 15px;
-  color: #BDA46D;
-  font-family: "DM Serif Display", serif;
-  pointer-events: none;
-  transition: all 0.4s;
-}
-.contact_section .contact_form form .form_mail input {
-  padding: 5px 10px;
-  border: none;
-  border-bottom: 2px solid #BDA46D;
-  width: 97%;
-  height: 30px;
-}
-.contact_section .contact_form form .form_mail input:focus {
-  outline: none;
-  border: 2px solid #BDA46D;
-}
-.contact_section .contact_form form .form_mail input:focus ~ label {
-  top: -10px;
-  font-size: 16px;
-}
-.contact_section .contact_form form .form_mail input:valid {
-  outline: none;
-  border: 2px solid #BDA46D;
-}
-.contact_section .contact_form form .form_mail input:valid ~ label {
-  top: -10px;
-  font-size: 16px;
-}
-.contact_section .contact_form form .form_message {
-  position: relative;
-}
-.contact_section .contact_form form .form_message label {
-  padding: 0 10px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 25%;
-  left: 15px;
-  color: #BDA46D;
-  font-family: "DM Serif Display", serif;
-  pointer-events: none;
-  transition: all 0.4s;
-}
-.contact_section .contact_form form .form_message textarea {
-  resize: none;
-  padding: 5px 10px;
-  border: none;
-  border-bottom: 2px solid #BDA46D;
-  width: 97%;
-  height: 30px;
-  transition: height 0.4s;
-  font-family: sans-serif;
-}
-.contact_section .contact_form form .form_message textarea:focus {
-  height: 30vh;
-  outline: none;
-  border: 2px solid #BDA46D;
-}
-.contact_section .contact_form form .form_message textarea:focus ~ label {
-  top: -10px;
-  font-size: 16px;
-}
-.contact_section .contact_form form .form_message textarea:valid {
-  outline: none;
-  border: 2px solid #BDA46D;
-}
-.contact_section .contact_form form .form_message textarea:valid ~ label {
-  top: -10px;
-  font-size: 16px;
-}
-.contact_section .contact_form form button {
-  background-color: #BDA46D;
-  border: none;
-  color: #ffffff;
-  margin: 20px 0 0;
-  padding: 10px 45px;
-  font-size: 24px;
-  font-family: "DM Serif Display", serif;
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-.contact_section .contact_form form button:hover {
-  background-color: #222627;
-}
-.contact_section .contact_form form .submit_message {
-  background-color: #BDA46D;
-  border: none;
-  color: #ffffff;
-  margin: 20px 0 0;
-  padding: 10px 45px;
-  font-size: 24px;
-  font-family: "DM Serif Display", serif;
-  text-align: center;
-}
-.contact_section .contact_form .submit_message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #BDA46D;
-  font-family: "DM Serif Display";
-  font-size: 20px;
-}
-
-@media screen and (max-width: 870px) {
-  .contact_section .contact_form form .form_civil {
-    flex-direction: column;
-    gap: 20px;
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h3 {
+    font-size: 20px;
   }
-  .contact_section .contact_form form .form_civil .first_name, .contact_section .contact_form form .form_civil .last_name {
-    width: 100%;
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h4 {
+    font-size: 16px;
   }
-  .contact_section .contact_form form .form_civil .first_name input, .contact_section .contact_form form .form_civil .last_name input {
-    width: 97%;
+  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner {
+    padding: 0.5em 1em;
   }
-}
-@media screen and (max-width: 797px) {
-  .contact_section .contact_form {
-    margin: 0 auto;
-    width: 90%;
+  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part .pantheon-logo {
+    font-size: 50px;
   }
-}
-@media screen and (max-width: 520px) {
-  .contact_section .contact_form {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 410px) {
-  .contact_section .contact_content {
-    width: 100%;
-    margin: 60px 0;
-  }
-  .contact_section .contact_content .title h1, .contact_section .contact_content .title h2 {
-    padding: 0 10px;
-  }
-  .contact_section .contact_content button {
-    padding: 1em;
-    font-size: 15px;
+  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part img {
+    width: 60px;
+    height: 60px;
   }
 }
 footer {
