@@ -71,9 +71,11 @@ header {
             gap: 25px;
         }
         
-        .ext_link a i {
-            color: #222627;
-            transition: all 0.3s;
+        .ext_link a {
+            i {
+                color: #222627;
+                transition: all 0.3s;
+            }
         }
 
         .home_link .logo {
