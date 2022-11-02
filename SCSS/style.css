@@ -116,7 +116,7 @@ header nav .ext_link a i {
 header nav .home_link .logo {
   width: 40px;
 }
-header nav .home_link h2 {
+header nav .home_link span {
   font-family: "DM Serif Display", serif;
   text-decoration: none;
   font-size: 24px;
@@ -128,7 +128,7 @@ header nav .burger_btn {
 }
 
 @media screen and (max-width: 795px) {
-  header nav .home_link h2 {
+  header nav .home_link span {
     display: none;
   }
 }
@@ -137,7 +137,7 @@ header nav .burger_btn {
     padding: 0.3em 2em;
     align-items: center;
   }
-  header nav .home_link h2 {
+  header nav .home_link span {
     display: block;
   }
   header nav .nav_link {
@@ -272,12 +272,12 @@ body::before {
   text-align: center;
   margin-bottom: 100px;
 }
-.title h1 {
+.title h2 {
   font-size: 100px;
   opacity: 0.3;
   text-transform: uppercase;
 }
-.title h2 {
+.title h3 {
   font-size: 50px;
   text-transform: capitalize;
   color: #BDA46D;
@@ -295,20 +295,20 @@ body::before {
 }
 
 @media screen and (max-width: 1000px) {
-  .title h2 {
+  .title h3 {
     top: 80px;
   }
 }
 @media screen and (max-width: 625px) {
-  .title h1 {
+  .title h2 {
     font-size: 90px;
   }
 }
 @media screen and (max-width: 587px) {
-  .title h1 {
+  .title h2 {
     font-size: 70px;
   }
-  .title h2 {
+  .title h3 {
     font-size: 40px;
   }
 }
@@ -316,18 +316,18 @@ body::before {
   .title {
     height: 10vh;
   }
-  .title h1 {
+  .title h2 {
     font-size: 60px;
   }
-  .title h2 {
+  .title h3 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 375px) {
-  div .title h1 {
+  div .title h2 {
     font-size: 50px;
   }
-  div .title h2 {
+  div .title h3 {
     font-size: 30px;
   }
 }
@@ -405,6 +405,11 @@ body::before {
   }
 }
 @media screen and (max-width: 767px) {
+  .welcome_section .welcome_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .welcome_section .welcome_text .name_title {
     width: max-content;
   }
@@ -442,7 +447,7 @@ body::before {
     width: 100%;
   }
   .welcome_section div .welcome_text .job_title {
-    font-size: 45px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 490px) {
@@ -451,7 +456,7 @@ body::before {
   }
 }
 @media screen and (max-width: 450px) {
-  .title h1 {
+  .title h2 {
     font-size: 60px;
   }
 }
@@ -474,7 +479,7 @@ body::before {
   width: 80%;
   margin: 60px auto 30px;
 }
-.pres_section .pres_content h2 {
+.pres_section .pres_content h3 {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -499,7 +504,7 @@ body::before {
   position: relative;
   padding-bottom: 100px;
 }
-.pres_section .pres_content .pres .text h3 {
+.pres_section .pres_content .pres .text h4 {
   color: #BDA46D;
   font-size: 40px;
   margin-bottom: 30px;
@@ -612,7 +617,7 @@ body::before {
   width: 80%;
   margin: 60px auto 30px;
 }
-.skills_section .skills_content h2 {
+.skills_section .skills_content h3 {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -640,7 +645,7 @@ body::before {
   box-shadow: 0 5px 10px rgba(134, 134, 134, 0.3);
   border-radius: 5px;
 }
-.skills_section .skills_content .skill .category:hover h3 {
+.skills_section .skills_content .skill .category:hover h4 {
   color: #ffffff;
 }
 .skills_section .skills_content .skill .category img {
@@ -648,7 +653,7 @@ body::before {
   object-fit: contain;
   justify-self: center;
 }
-.skills_section .skills_content .skill .category h3 {
+.skills_section .skills_content .skill .category h4 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -731,7 +736,7 @@ body::before {
     border-radius: 5px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
-  .skills_section .skills_content .skill .category h3 {
+  .skills_section .skills_content .skill .category h4 {
     transform: rotate(0deg);
     position: static;
     color: #ffffff;
@@ -796,7 +801,7 @@ body::before {
   width: 90%;
   margin: 60px auto;
 }
-.project_section .project_content h2 {
+.project_section .project_content h3 {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -820,7 +825,7 @@ body::before {
   justify-content: center;
   gap: 30px;
 }
-.project_section .project_content .projects_card .projects_type h2 {
+.project_section .project_content .projects_card .projects_type h4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -878,7 +883,7 @@ body::before {
   height: 50px;
   transition: all 0.4s ease;
 }
-.project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h3, .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h4 {
+.project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h5, .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part h6 {
   width: 0;
   font-size: 0;
   transition: all 0.4s ease;
@@ -920,13 +925,13 @@ body::before {
   width: 70px;
   height: 70px;
 }
-.project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part h3 {
+.project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part h5 {
   width: 100%;
   font-size: 24px;
   color: #BDA46D;
   margin-bottom: 5px;
 }
-.project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part h4 {
+.project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part h6 {
   width: 100%;
   text-transform: uppercase;
   color: #222627;
@@ -961,7 +966,7 @@ body::before {
   .project_section .project_content .projects_card .projects_type {
     flex-direction: column;
   }
-  .project_section .project_content .projects_card .projects_type h2 {
+  .project_section .project_content .projects_card .projects_type h4 {
     position: static;
     transform: rotate(0);
     width: 100%;
@@ -1001,19 +1006,19 @@ body::before {
   .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text {
     width: 100%;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h3 {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h5 {
     display: block;
-    font-size: 24px;
+    font-size: 18px;
     color: #BDA46D;
     margin-bottom: 5px;
     width: 100%;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h4 {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h6 {
     display: block;
     text-transform: uppercase;
     color: #222627;
     opacity: 0.3;
-    font-size: 16px;
+    font-size: 10px;
     width: 100%;
   }
   .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_right_part {
@@ -1033,6 +1038,12 @@ body::before {
   }
   .project_section .project_content .projects_card .projects_type .cards .card.active .card_cover {
     height: 400px;
+  }
+  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part .card_banner_text h5 {
+    font-size: 24px;
+  }
+  .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner .card_left_part .card_banner_text h6 {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 797px) {
@@ -1064,10 +1075,10 @@ body::before {
     width: 50px;
     height: 50px;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h3 {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h5 {
     font-size: 20px;
   }
-  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h4 {
+  .project_section .project_content .projects_card .projects_type .cards .card .card_banner .card_left_part .card_banner_text h6 {
     font-size: 16px;
   }
   .project_section .project_content .projects_card .projects_type .cards .card.active .card_banner {

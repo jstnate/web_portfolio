@@ -61,7 +61,7 @@ body {
 
 @media screen and (max-width: 1000px) {
     .title {
-        h2 {
+        h3 {
             top: 80px;
         }
     }
@@ -69,7 +69,7 @@ body {
 
 @media screen and (max-width: 625px) {
     .title {
-        h1{
+        h2{
             font-size: 90px;
         } 
     }
@@ -77,11 +77,11 @@ body {
 
 @media screen and (max-width: 587px) {
     .title {
-        h1{
+        h2 {
             font-size: 70px;
         }
 
-        h2 {
+        h3 {
             font-size: 40px;
         }
     }
@@ -91,11 +91,11 @@ body {
     .title {
         height: 10vh;
 
-        h1{
+        h2{
             font-size: 60px;
         }
 
-        h2 {
+        h3 {
             font-size: 30px;
             
         }
@@ -104,11 +104,11 @@ body {
 
 @media screen and (max-width: 375px) {
     div .title {
-        h1{
+        h2{
             font-size: 50px;
         }
 
-        h2 {
+        h3 {
             font-size: 30px;
             
         }
@@ -208,6 +208,9 @@ body {
 @media screen and (max-width: 767px) {
     .welcome_section {
         .welcome_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .name_title {
                 width: max-content;
             }
@@ -254,7 +257,7 @@ body {
                 }
 
                 .job_title {
-                    font-size: 45px;
+                    font-size: 50px;
                 }
             }
         }
@@ -269,7 +272,7 @@ body {
 
 @media screen and (max-width: 450px) {
     .title {
-        h1 {
+        h2 {
             font-size: 60px
         }
     }
@@ -290,10 +293,6 @@ body {
 
 .pres_section {
     @include mixins.sectionWidth;
-    
-    // &::before {
-    //     @include mixins.patternReverse;
-    // }
 
     .pres_content {
         position: relative;
@@ -321,7 +320,7 @@ body {
                 position: relative;
                 padding-bottom: 100px;
 
-                h3 {
+                h4 {
                     color: #BDA46D;
                     font-size: 40px;
                     margin-bottom: 30px;
@@ -465,10 +464,6 @@ body {
 .skills_section {
     @include mixins.sectionWidth;
 
-    // &::before {
-    //     @include mixins.pattern;
-    // }
-
     .skills_content {
         position: relative;
         z-index: 2;
@@ -500,7 +495,7 @@ body {
                     box-shadow: 0 5px 10px rgba(134, 134, 134, 0.3);
                     border-radius: 5px;
 
-                    h3 {
+                    h4 {
                         color: #ffffff;
                     }
                 }
@@ -511,7 +506,7 @@ body {
                     justify-self: center;
                 }
 
-                h3 {
+                h4 {
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -602,7 +597,7 @@ body {
                 border-radius: 5px;
                 box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.3);
 
-                h3 {
+                h4 {
                     transform: rotate(0deg);
                     position: static;
                     color: #ffffff;
@@ -709,7 +704,7 @@ body {
                 justify-content: center;
                 gap: 30px;
 
-                h2 {
+                h4 {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -771,7 +766,7 @@ body {
                                     transition: all .4s ease;
                                 }
     
-                                h3, h4 {
+                                h5, h6 {
                                     width: 0;
                                     font-size: 0;
                                     transition: all .4s ease;
@@ -821,14 +816,14 @@ body {
                                     height: 70px;
                                 }
         
-                                h3 {
+                                h5 {
                                     width: 100%;
                                     font-size: 24px;
                                     color: #BDA46D;
                                     margin-bottom: 5px;
                                 }
         
-                                h4 {
+                                h6 {
                                     width: 100%;
                                     text-transform: uppercase;
                                     color: #222627;
@@ -877,7 +872,7 @@ body {
         .projects_type {
             flex-direction: column;
     
-            h2 {
+            h4 {
                 position: static;
                 transform: rotate(0);
                 width: 100%;
@@ -919,20 +914,20 @@ body {
                             .card_banner_text {
                                 width: 100%;
     
-                                h3 {
+                                h5 {
                                     display: block;
-                                    font-size: 24px;
+                                    font-size: 18px;
                                     color: #BDA46D;
                                     margin-bottom: 5px;
                                     width: 100%;
                                 }
         
-                                h4 {
+                                h6 {
                                     display: block;
                                     text-transform: uppercase;
                                     color: #222627;
                                     opacity: .3;
-                                    font-size: 16px;
+                                    font-size: 10px;
                                     width: 100%;
                                 }
                             }
@@ -959,6 +954,20 @@ body {
                     width: 100%;
                     .card_cover {
                         height: 400px;
+                    }
+
+                    .card_banner {
+                        .card_left_part {
+                            .card_banner_text {
+                                h5 {
+                                    font-size: 24px;
+                                }
+
+                                h6 {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1008,11 +1017,11 @@ body {
                 }
     
                 .card_banner_text {
-                    h3 {
+                    h5 {
                         font-size: 20px;
                     }
     
-                    h4 {
+                    h6 {
                         font-size: 16px;
                     }
                 }
