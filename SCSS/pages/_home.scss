@@ -1,3 +1,4 @@
+// IMPORT MIXINS
 @use '../abstracts/mixins';
 
 html, body {
@@ -20,6 +21,7 @@ body {
     }
 }
 
+// BUTTON GO TO THE TOP
 .go_up_button {
     @include mixins.flexAlign(center, center);
     @include mixins.fixPos(80);
@@ -44,16 +46,19 @@ body {
     }
 }
 
+// TITLE
 .title {
     @include mixins.sectionTitle;
 }
 
+// SECTION BEFORE ANIMATION
 .smooth_appear {
     opacity: 0;
     transform: translateY(30px);
     transition: 1s;
 }
 
+// SECTION REVEAL
 .blur_reveal {
     opacity: 1;
     transform: translateY(0);
@@ -115,6 +120,9 @@ body {
     }
 }
 
+// =====================================================================
+
+// WELCOME SECTION 
 .welcome_section {
     position: relative;
     width: 100%;
@@ -291,6 +299,9 @@ body {
     }
 }
 
+// =====================================================================
+
+// PRESENTATION SECTION
 .pres_section {
     @include mixins.sectionWidth;
 
@@ -461,6 +472,9 @@ body {
     
 }
 
+// =====================================================================
+
+// SKILLS SECTION
 .skills_section {
     @include mixins.sectionWidth;
 
@@ -673,6 +687,9 @@ body {
     }
 }
 
+// =====================================================================
+
+// PROJECT SECTION
 .project_section {
     @include mixins.sectionWidth;
 

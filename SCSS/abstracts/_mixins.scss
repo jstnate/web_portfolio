@@ -1,20 +1,30 @@
+// DISPLAY FLEX
 @mixin flexAlign($align, $justify){
     display: flex;
     align-items: $align;
     justify-content: $justify;
 }
 
+// =====================================================================
+
+// FIXED POSITION
 @mixin fixPos($index) {
     position: fixed;
     z-index: $index;
 }
 
+// =====================================================================
+
+// SECTION FORMAT
 @mixin sectionWidth {
     position: relative;
     padding: 10px 0 10px;
     width: 100%;
 }
 
+// =====================================================================
+
+// SECTION TITLE FORMAT
 @mixin sectionTitle {
     font-family: 'DM Serif Display', serif;
     position: relative;
@@ -36,7 +46,9 @@
         }
 }
 
+// =====================================================================
 
+// RESPONSIVE SECTION TITLE FORMAT
 @mixin responsiveSectionTitle {
     font-family: 'DM Serif Display', serif;
     position: relative;
@@ -45,19 +57,22 @@
     text-align: center;
     margin-bottom: 100px;
 
-        h2 {
-            font-size: 80px;
-            opacity: 0.3;
-            text-transform: uppercase;
-        }
-
-        h3 {
-            font-size: 30px;
-            text-transform: capitalize;
-            color: #BDA46D;
-        }
+    h2 {
+        font-size: 80px;
+        opacity: 0.3;
+        text-transform: uppercase;
     }
 
+    h3 {
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #BDA46D;
+    }
+}
+
+// =====================================================================
+
+// H2 POSITION
 @mixin h2Position($right, $bottom) {
     
     h3 {
