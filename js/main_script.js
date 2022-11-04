@@ -6,20 +6,24 @@ let menu = document.querySelector('.nav_link')
 let link = document.querySelector('.nav_link')
 
 if (btn != null) {
+
+    // LISTENER LOOPING
     function toggleMenu() {
-        if (btn.classList.contains('active')) {
+        if (btn.classList.contains('active')) { // SHOW THE MENU
             btn.classList.remove('active')
             menu.classList.remove('active')
-        } else {
+        } else { // HIDE THE MENU
             btn.classList.add('active')
             menu.classList.add('active')
         }
     }
 
+    // LISTENING THE BUTTON
     btn.addEventListener('click', toggleMenu)
 }
 
 if (link != null) {
+    // HIDE THE MENU ON LINK CLICK
     link.addEventListener('click', function() {
         if (btn.classList.contains('active')) {
             btn.classList.remove('active')
@@ -30,7 +34,7 @@ if (link != null) {
 
 // =====================================================================
 
-//  TEXT HEADER ANIM SCRIPT
+//  TEXT HEADER ANIM SCRIPT (Library)
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -96,29 +100,30 @@ window.onload = function() {
 const cards = document.querySelectorAll('.card')
 
 cards.forEach((card) => {
+    // LISTENING EACH CARD
     card.addEventListener("click", () => {
         cards.forEach((card) => {
-            card.classList.remove("active")
+            card.classList.remove("active") // HIDE TARGET CARD
         })
-        card.classList.add('active')
+        card.classList.add('active') // SHOW TARGET CARD
     })
 })
 
 // =====================================================================
 
 // SMOOTH BLUR ANIM SCRIPT
-const animRatio = 0.3
-const animOptions = {
+const animRatio = 0.3 // RATION OF SECTION WHEN INTERSECTION OBSERVER TURN ON 
+const animOptions = { // OPTIONS OF THE INTERSECTION OBSERVER
     root: null,
     rootMargin: '50px',
-    threshold: animRatio
+    threshold: animRatio // VISIBILITY THRESHOLD
 }
 
-const animatedSection = document.querySelectorAll('.smooth_appear').forEach((item) => {
+const animatedSection = document.querySelectorAll('.smooth_appear').forEach((item) => { // FOR EACH ITEM WITH "smooth_appear" CLASS
     if (item != null) {
-        const animObserver = function (revealEntries_1, reveal_1) {
-            revealEntries_1.forEach(function(entry_1) {
-                if(entry_1.intersectionRatio > animRatio){
+        const animObserver = (revealEntries_1, reveal_1) => {
+            revealEntries_1.forEach((entry_1) => {
+                if(entry_1.intersectionRatio > animRatio){ // IF ITEM TOUCH THRESHOLD OF VISIBILITY
                     reveal_1.unobserve(entry_1.target)
                     entry_1.target.classList.add("blur_reveal")
                 }
