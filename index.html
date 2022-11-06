@@ -23,18 +23,30 @@
 
     <!-- JS link -->
     <script src="./js/main_script.js" defer></script>
-    <script type = "application/ld+json"> 
-        { 
-            "@context" : "https://schema.org/" , "@type" : "Personne" , "nom" : " 
-            "Nathan" , "URL" :
-            "https://nathanlefetey.com/" :
-            "idem" : 
-            "[
-            "https://www.linkedin.com/in/antoine-bayssac-74262b213/",
-            "https://github.com/antoinebayssac"
-            ]" :
-        } 
-    </script>
+    <script type=”application/ld+json”>
+        {
+            “@context”: “https://nathanlefetey.com”,
+            “@type”: “Portfolio”,
+            “mainEntity”: 
+            [
+                {
+                    “@type”: “Question”,
+                    “name”: “Who am I ?”,
+                    “acceptedAnswer”: {
+                        “@type”: “Answer”,
+                        “text”: “My name is Nathan LEFETEY and I'm full-stack developper.”
+                    }
+                }, {
+                    “@type”: “Question”,
+                    “name”: “What is this site for ?”,
+                    “acceptedAnswer”: {
+                        “@type”: “Answer”,
+                        “text”: “This site is my web portfolio where I would add all my coding project.”
+                    }
+                }
+            ]
+        }
+        </script>
 
     <title>Nathan LEFETEY - Portfolio</title>
 </head>
