@@ -1092,6 +1092,26 @@ body::before {
     height: 60px;
   }
 }
+.page-404 {
+  overflow: hidden;
+}
+.page-404 .message {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-404 .message h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #BDA46D;
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 3px;
+}
+
 footer {
   position: relative;
   z-index: 50;
