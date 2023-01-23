@@ -1,5 +1,12 @@
 'use strict';
 
+window.onfocus = () => {
+    document.title = 'Nathan LEFETEY - Portfolio'
+}
+
+window.onblur = () => {
+    document.title = 'Revenez vite !'
+}
 // BURGER MENU SCRIPT
 let btn = document.querySelector('.burger_btn')
 let menu = document.querySelector('.nav_link')
