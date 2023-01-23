@@ -1,5 +1,9 @@
 'use strict';
 
+window.onload = () => {
+    document.title = 'Nathan LEFETEY - Portfolio'
+}
+
 window.onfocus = () => {
     document.title = 'Nathan LEFETEY - Portfolio'
 }
