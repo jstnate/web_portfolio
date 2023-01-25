@@ -1,7 +1,5 @@
 # My Web Portfolio
-
-## Here is the link 
-[My Portfolio](https://jstnate-portfolio.vercel.app/)
+[Here is the link](https://nathanlefetey.com/)
 ---
 ## Deployment
 * My portfolio is hosted by vercel with an OVH domain
